@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://la-cascade.io/guide-des-animations-svg/ -->
+<html lang="fr" prefix="dcterms: http://purl.org/dc/terms/"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide des animations SVG (SMIL)</title>
+<meta name="title" content="Guide des animations SVG (SMIL)">
+<meta name="description" content="Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.">
+<meta name="keywords" content="css, html, web, web design, responsive design, développement web, sass, svg, animations, flexbox, css-grid layout, javascript, typographie, sketch 3, grunt, gulp, ux, ui, métadonnées, web sémantique, seo, workflow, video">
+<meta name="Editor" content="Pierre Choffé">
+<meta name="Translator" content="Pierre Choffé">
+<meta name="Publisher" content="La Cascade">
+<script async="" src="./Guide des animations SVG (SMIL)_files/analytics.js"></script><script src="./Guide des animations SVG (SMIL)_files/gbV3UCK1r-JM3bvZeD8d4X_GSmc.js"></script><script src="./Guide des animations SVG (SMIL)_files/oOG44ciXYCrMNEHlfOEoBLohTbk.js"></script><script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:0,petok:"e9258de7ecf644445f152d43f59436208888017f-1515084366-86400"};
+//]]>
+</script>
+<script type="text/javascript" src="./Guide des animations SVG (SMIL)_files/rocket.min.js"></script>
+<link rel="shortcut icon" href="https://la-cascade.io/favicon.ico">
+<link rel="stylesheet" type="text/css" href="./Guide des animations SVG (SMIL)_files/global.css">
+<link href="./Guide des animations SVG (SMIL)_files/css" rel="stylesheet" type="text/css">
+<link rel="publisher" href="https://plus.google.com/u/0/114976289963220170204">
+<link rel="author" href="https://plus.google.com/u/0/114976289963220170204">
+<meta name="twitter:creator:id" content="37664207">
+<meta property="fb:admins" content="100007472623336">
+<meta property="og:locale" content="fr">
+<meta name="description" content="Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.">
+<link rel="shortcut icon" href="https://la-cascade.io/favicon.ico" type="image/x-icon">
+<link rel="canonical" href="https://la-cascade.io/guide-des-animations-svg/">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="amphtml" href="https://la-cascade.io/guide-des-animations-svg/amp/">
+<meta property="og:site_name" content="LA CASCADE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Guide des animations SVG (SMIL)">
+<meta property="og:description" content="Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.">
+<meta property="og:url" content="https://la-cascade.io/guide-des-animations-svg/">
+<meta property="article:published_time" content="2014-12-17T18:20:00.000Z">
+<meta property="article:modified_time" content="2017-11-03T13:09:12.000Z">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="Design">
+<meta property="article:tag" content="SVG">
+<meta property="article:tag" content="Avancé">
+<meta property="article:tag" content="Transformations">
+<meta property="article:tag" content="Animations">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Guide des animations SVG (SMIL)">
+<meta name="twitter:description" content="Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.">
+<meta name="twitter:url" content="https://la-cascade.io/guide-des-animations-svg/">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="pierre choffé">
+<meta name="twitter:label2" content="Filed under">
+<meta name="twitter:data2" content="CSS, HTML, Design, SVG, Avancé, Transformations, Animations">
+<meta name="twitter:site" content="@pierrechoffe">
+<meta name="twitter:creator" content="@pierrechoffe">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "LA CASCADE",
+        "logo": "https://la-cascade.io/content/images/2015/03/optimised.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "pierre choffé",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/22b6733860196ff885f31beedf1581ef?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://la-cascade.io/author/pierre-choffe/",
+        "sameAs": [
+            "https://twitter.com/pierrechoffe"
+        ]
+    },
+    "headline": "Guide des animations SVG (SMIL)",
+    "url": "https://la-cascade.io/guide-des-animations-svg/",
+    "datePublished": "2014-12-17T18:20:00.000Z",
+    "dateModified": "2017-11-03T13:09:12.000Z",
+    "keywords": "CSS, HTML, Design, SVG, Avancé, Transformations, Animations",
+    "description": "Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://la-cascade.io/"
+    }
+}
+    </script>
+<script type="text/rocketscript" data-rocketsrc="/public/ghost-sdk.min.js?v=925d70cfb6" data-rocketoptimized="true"></script><script type="text/javascript" src="./Guide des animations SVG (SMIL)_files/ghost-sdk.min.js"></script>
+<script type="text/rocketscript" data-rocketoptimized="true">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "e9bd3248dd0a"
+});
+</script>
+<meta name="generator" content="Ghost 1.19">
+<link rel="alternate" type="application/rss+xml" title="LA CASCADE" href="https://la-cascade.io/rss/">
+<script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Pierre Choffé",
+      "url" : "https://la-cascade.io/author/pierre-choffe/",
+      "sameAs" : [ "https://www.facebook.com/pierre.choffe.7",
+          "https://twitter.com/pierrechoffe",
+          "https://www.linkedin.com/profile/view?id=108000049",
+          "https://plus.google.com/u/0/+PierreChoff%C3%A9Css/about",
+          "https://la-cascade.io/foaf.rdf",
+          "https://fr.wikipedia.org/wiki/Utilisateur:Pierre_Choffe",
+          "http://codepen.io/pierrechoffe/",
+          "http://tutsplus.com/authors/pierre-choffe",
+          "https://github.com/pierrechoffe"]
+    }
+    </script>
+<script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Blog",
+      "name" : "La Cascade",
+      "alternateName" : "La-Cascade",
+      "url" : "https://la-cascade.io/",
+      "editor" : {
+        "@type": "Person",
+        "name": "Pierre Choffé"
+        },
+      "translator" : {
+        "@type": "Person",
+        "name": "Pierre Choffé"
+        },
+      "author" : {
+      	"@type": "Person",
+        "name": "Pierre Choffé"
+        }
+    }
+    </script>
+<meta name="google-site-verification" content="c7Ipq7l4JVE7MtRvcmVlowoe-evYW5-51aHAixnqmLU">
+
+<link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImJhY2stdG8tdG9wLWJ1dHRvbiJdIHsKICBiYWNrZ3JvdW5kOiAjY2NjOwogIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgLjEpOwogIGJvdHRvbTogMjVweDsKICBjdXJzb3I6IHBvaW50ZXI7CiAgZGlzcGxheTogYmxvY2s7CiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7CiAgZm9udC1zaXplOiA0MHB4OwogIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7CiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50YWxpYXNlZDsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICBoZWlnaHQ6IDc1cHg7CiAgbGV0dGVyLXNwYWNpbmc6IDA7CiAgbGluZS1oZWlnaHQ6IDc1cHg7CiAgb3BhY2l0eTogMDsKICBwb2ludGVyLWV2ZW50czogbm9uZTsKICBwb3NpdGlvbjogZml4ZWQ7CiAgcmlnaHQ6IDI1cHg7CiAgdGFwLWhpZ2hsaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgdGV4dC1hbGlnbjogY2VudGVyOwogIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7CiAgLXdlYmtpdC10cmFuc2l0aW9uOiBvcGFjaXR5IC4zcyBlYXNlLWluLW91dDsKICB0cmFuc2l0aW9uOiBvcGFjaXR5IC4zcyBlYXNlLWluLW91dDsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwogIHdpZHRoOiA3NXB4OwogIHotaW5kZXg6IDcwMDA7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYmFjay10by10b3AtYnV0dG9uIl06aG92ZXIgewogIC13ZWJraXQtZmlsdGVyOiBicmlnaHRuZXNzKDEwOCUpOwogICAgICAgICAgZmlsdGVyOiBicmlnaHRuZXNzKDEwOCUpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImJhY2stdG8tdG9wLWJ1dHRvbiJdOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDFweCwgMCk7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDFweCwgMCk7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYmFjay10by10b3AtYnV0dG9uIl1bdmlzaWJpbGl0eT0idmlzaWJsZSJdIHsKICBwb2ludGVyLWV2ZW50czogYWxsOwogIG9wYWNpdHk6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYmFjay10by10b3AtYnV0dG9uIl1bc2hhcGU9InJvdW5kZWQiXSB7CiAgYm9yZGVyLXJhZGl1czogNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3NoYXBlPSJjaXJjbGUiXSB7CiAgYm9yZGVyLXJhZGl1czogNTAlOwp9CgpAbWVkaWEgKG1heC13aWR0aDogNzg2cHgpIHsKICBjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImJhY2stdG8tdG9wLWJ1dHRvbiJdIHsKICAgIGhlaWdodDogNTBweDsKICAgIHdpZHRoOiA1MHB4OwogICAgZm9udC1zaXplOiAyNXB4OwogICAgbGluZS1oZWlnaHQ6IDUwcHg7CiAgICByaWdodDogMTBweDsKICAgIGJvdHRvbTogMTBweDsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYmFjay10by10b3AtYnV0dG9uIl1bc2hhcGU9InJvdW5kZWQiXSB7CiAgICBib3JkZXItcmFkaXVzOiAzcHg7CiAgfQoKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJiYWNrLXRvLXRvcC1idXR0b24iXSAuY2xvdWRmbGFyZS1pY29uIHsKICBib3R0b206IDA7CiAgZGlzcGxheTogYmxvY2s7CiAgZmlsbDogIzY2NjY2NjsKICBmaWxsOiByZ2JhKDAsIDAsIDAsIC40KTsKICBoZWlnaHQ6IDEwMCU7CiAgbGVmdDogMDsKICBwb2ludGVyLWV2ZW50czogbm9uZTsKICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgcmlnaHQ6IDA7CiAgdG9wOiAwOwogIHdpZHRoOiAxMDAlOwp9Cg=="><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body class="post-template tag-css tag-html tag-design tag-svg tag-avance tag-transformations tag-animations nav-closed" cz-shortcut-listen="true">
+<div class="nav">
+<h3 class="nav-title">Menu</h3>
+<a href="https://la-cascade.io/guide-des-animations-svg/#" class="nav-close">
+<span class="hidden">Close</span>
+</a>
+<ul>
+<li class="nav-home" role="presentation"><a href="https://la-cascade.io/">Home</a></li>
+<li class="nav-liste-articles" role="presentation"><a href="https://la-cascade.io/articles/">Liste Articles</a></li>
+<li class="nav-liste-ressources" role="presentation"><a href="https://la-cascade.io/ressources/">Liste Ressources</a></li>
+<li class="nav--propos" role="presentation"><a href="https://la-cascade.io/a-propos/">À propos</a></li>
+<li class="nav-dicocss" role="presentation"><a href="https://la-cascade.io/dico-css/">Dico-CSS</a></li>
+<li class="nav-css" role="presentation"><a href="https://la-cascade.io/tag/css/">CSS</a></li>
+<li class="nav-bases-css" role="presentation"><a href="https://la-cascade.io/tag/bases-css/">Bases CSS</a></li>
+<li class="nav-html" role="presentation"><a href="https://la-cascade.io/tag/html/">HTML</a></li>
+<li class="nav-svg" role="presentation"><a href="https://la-cascade.io/tag/svg/">SVG</a></li>
+<li class="nav-sass" role="presentation"><a href="https://la-cascade.io/tag/sass/">Sass</a></li>
+<li class="nav-flexbox" role="presentation"><a href="https://la-cascade.io/tag/Flexbox/">Flexbox</a></li>
+<li class="nav-cssgrid" role="presentation"><a href="https://la-cascade.io/tag/css-grid/">CSS-Grid</a></li>
+<li class="nav-design" role="presentation"><a href="https://la-cascade.io/tag/design/">Design</a></li>
+<li class="nav-responsive-design" role="presentation"><a href="https://la-cascade.io/tag/responsive-web-design/">Responsive Design</a></li>
+<li class="nav-typographie" role="presentation"><a href="https://la-cascade.io/tag/typographie/">Typographie</a></li>
+<li class="nav-couleur" role="presentation"><a href="https://la-cascade.io/tag/couleur/">Couleur</a></li>
+<li class="nav-dgrads" role="presentation"><a href="https://la-cascade.io/tag/gradients/">Dégradés</a></li>
+<li class="nav-animations" role="presentation"><a href="https://la-cascade.io/tag/animations/">Animations</a></li>
+<li class="nav-workflow" role="presentation"><a href="https://la-cascade.io/tag/workflow/">Workflow</a></li>
+<li class="nav-sketch" role="presentation"><a href="https://la-cascade.io/tag/sketch/">Sketch</a></li>
+<li class="nav-smantique" role="presentation"><a href="https://la-cascade.io/tag/metadata/">Sémantique</a></li>
+<li class="nav-grunt" role="presentation"><a href="https://la-cascade.io/grunt-pour-ceux-qui-pensent-que-grunt-est-complique/">Grunt</a></li>
+<li class="nav-gulp" role="presentation"><a href="https://la-cascade.io/gulp-pour-les-debutants/">Gulp</a></li>
+<li class="nav-freefonts" role="presentation"><a href="https://la-cascade.io/les-free-fonts-aujourdhui/">Freefonts</a></li>
+<li class="nav-video-background" role="presentation"><a href="https://la-cascade.io/video-en-background/">Video Background</a></li>
+</ul>
+<div class="follow-me-icons">
+<a href="https://twitter.com/pierrechoffe"><span class="icon-twitter"></span></a>
+<a href="https://www.facebook.com/pierre.choffe.7"><span class="icon-facebook"></span></a>
+<a href="https://plus.google.com/u/0/+PierreChoff%C3%A9Css/posts"><span class="icon-google-plus"></span></a>
+<a href="https://feeds.feedburner.com/LaCascade"><span class="icon-feed"></span></a>
+</div>
+
+</div>
+<span class="nav-cover"></span>
+<div class="site-wrapper" itemscope="" itemtype="http://schema.org/Article"><span itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><link itemprop="url" href="https://la-cascade.io/"><span itemprop="name" content="La Cascade"><span itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><link itemprop="url" href="./Guide des animations SVG (SMIL)_files/optimised.svg"></span></span></span>
+<header class="main-header post-head no-cover">
+<nav class="main-nav  clearfix">
+<a class="blog-logo" href="https://la-cascade.io/"><img src="./Guide des animations SVG (SMIL)_files/optimised.svg" alt="Blog Logo"></a>
+<a class="menu-button" href="https://la-cascade.io/guide-des-animations-svg/#"><span class="burger" aria-label="navigation du site">☰</span><span class="word">Menu</span></a>
+</nav>
+</header>
+<main class="content">
+<article class="post tag-css tag-html tag-design tag-svg tag-avance tag-transformations tag-animations">
+<header class="post-header">
+<h1 class="post-title" itemprop="headline">Guide des animations SVG (SMIL)</h1>
+<div class="post-meta">
+<time class="post-date" datetime="2014-12-17" itemprop="datePublished">17 December 2014</time> <span itemprop="about" aria-label="sujet des articles"> on <a href="https://la-cascade.io/tag/css/">CSS</a>, <a href="https://la-cascade.io/tag/html/">HTML</a>, <a href="https://la-cascade.io/tag/design/">Design</a>, <a href="https://la-cascade.io/tag/svg/">SVG</a>, <a href="https://la-cascade.io/tag/avance/">Avancé</a>, <a href="https://la-cascade.io/tag/transformations/">Transformations</a>, <a href="https://la-cascade.io/tag/animations/">Animations</a></span>
+</div>
+</header>
+<section class="post-content" itemprop="articleBody">
+<div class="kg-card-markdown"><div class="post-description"><p><span itemprop="description">Armez-vous de courage, voi ch'entrate... Voici le fameux guide de Sara Soueidan, pour tout savoir sur les animations SVG avec SMIL. Les animations SMIL permettent des choses impossibles avec CSS.</span></p></div>
+<p><em>Par <span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name" property="dc:creator">Sara Soueidan</span></span></em></p>
+<p><strong>Introduction de Chris Coyier</strong> : Sara a le don de plonger au coeur des fonctionnalités du web et de nous les expliquer à nous autres, simples mortels. Ici, elle va creuser au plus profond de <span itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://en.wikipedia.org/wiki/Synchronized_Multimedia_Integration_Language"><span itemprop="name">SMIL</span></span> (et ses amis) et de la syntaxe d’animation de <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics"><span itemprop="name"><a href="https://la-cascade.io/tag/svg/">SVG</a></span></span> pour nous donner ce guide <em>épique</em>.</p>
+<p><span aria-hidden="true" data-icon="☞"></span> <em>Note du traducteur épuisé : guide épique s’il en est, et qui peut paraître ardu, surtout dans ses premiers paragraphes. Mon conseil&nbsp;: regardez les animations (en commençant <a href="https://la-cascade.io/guide-des-animations-svg/#morphing">ici par exemple</a>), lisez les paragraphes dans le désordre, puis relisez dans l’ordre</em>.</p>
+<h2 id="gnralits">Généralités</h2>
+<p>Les <span itemprop="about">graphiques SVG</span> peuvent être animés au moyen d’<strong><span itemprop="about">éléments d’animation</span></strong>. Les éléments d’<span itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://en.wikipedia.org/wiki/SVG_animation"><span itemprop="name">animations</span></span> ont été définis à l’origine dans la <span itemprop="about"><a href="https://www.w3.org/TR/2001/REC-smil-animation-20010904/">spécification d’animation SMIL</a></span> (<span itemprop="about"><a href="https://fr.wikipedia.org/wiki/Synchronized_Multimedia_Integration_Language">Synchronized Multimedia Integration Language</a></span>). Ces éléments comprennent&nbsp;:</p>
+<ul>
+<li><code>&lt;animate&gt;</code> - qui vous permet d’animer des attributs et propriétés scalaires sur une période de temps donnée.</li>
+<li><code>&lt;set&gt;</code> - qui est un raccourci pratique d’<code>&lt;animate&gt;</code>, utile pour assigner des valeurs d’animation à des attributs et propriétés non numériques, telles que la propriété visibilité.</li>
+<li><code>&lt;animateMotion&gt;</code> - qui déplace un élément le long d’un chemin.</li>
+<li><code>&lt;animateColor&gt;</code> - qui modifie la valeur de couleur d’attributs ou de propriétés dans le temps. Notez que l’<span itemprop="about">élément <code>&lt;animateColor&gt;</code></span> est désormais obsolète, on utilise simplement l’<span itemprop="about">élément <code>&lt;animate&gt;</code></span> en ciblant les propriétés qui peuvent prendre des valeurs de couleurs. Il est toujours présent dans la <span itemprop="about">spécification SVG&nbsp;1.1</span>, mais il est clairement indiqué qu’il est obsolète —&nbsp;et il est absent de la <span itemprop="about">spécification SVG&nbsp;2</span>.</li>
+</ul>
+<p>En plus des éléments d’animation définis dans la <span itemprop="about">spec SMIL</span>, SVG inclut des <span itemprop="about">extensions compatibles</span> avec ladite spécification. Ces extensions incluent les attributs étendant la fonctionnalité de l’élément <code>&lt;animateMotion&gt;</code> et des éléments d’animation supplémentaires. Les extensions SVG comprennent&nbsp;:</p>
+<ul>
+<li><code>&lt;animateTransform&gt;</code> - vous permet d’animer l’un des attributs de transformation SVG dans le temps, comme l’attribut <code>&lt;transform&gt;</code>.</li>
+<li><code>&lt;path&gt;</code> (<em>attribut</em>) - permet à toute fonctionnalité de la syntaxe de chemin SVG d’être spécifiée dans un attribut de chemin de l’élément <code>&lt;animateMotion&gt;</code> (l’animation SMIL permet seulement un sous-ensemble de cette syntaxe à l’intérieur d’un attribut de chemin). Nous reviendrons sur <code>&lt;animateMotion&gt;</code> dans une section qui suit.</li>
+<li><code>&lt;mpath&gt;</code> - utilisé en conjonction avec l’élément <code>&lt;animateMotion&gt;</code> pour référencer un chemin et indiquer qu’il servira de... chemin à une animation.L’élément <code>&lt;mpath&gt;</code> est inclu à l’intéreur de l’élément <code>&lt;animateMotion&gt;</code> avant la balise fermante.</li>
+<li><code>&lt;keypoints&gt;</code> (<em>attribut</em>) - utilisé comme attribut pour <code>&lt;animateMotion&gt;</code> afin de fournir un contrôle précis de la vitesse des animations sur les chemins.</li>
+<li><code>&lt;rotate&gt;</code> (<em>attribut</em>) - utilisé comme attribut pour <code>&lt;animateMotion&gt;</code> afin de contrôler si un objet est automatiquement pivoté de façon à ce que son axe des x pointe dans la même direction (ou la direction opposée) au vecteur tangent directionnel du chemin. Cet attribut est essentiel pour que le mouvement le long d’un chemin fonctionne comme le souhaitez. Nous verrons cela plus en détail dans la section <code>&lt;animateMotion&gt;</code>.</li>
+</ul>
+<p>Les <span itemprop="about">animations SVG</span> peuvent être de nature similaire aux <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://en.wikipedia.org/wiki/CSS_Animations"><span itemprop="name">animations</span></span> et transitions CSS. On crée des <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://developer.mozilla.org/fr/docs/Web/CSS/@keyframes"><span itemprop="name">keyframes</span></span>, les objets se déplacent, les couleurs changent etc. Cependant, elles peuvent faire certaines choses que les animations CSS ne permettent pas de réaliser, ce que nous allons voir tout à l’heure.</p>
+<h2 id="pourquoiutiliserlesanimationssvg">Pourquoi utiliser les animations SVG?</h2>
+<p>Les SVG peuvent être <a href="https://slides.com/sarasoueidan/styling-animating-svgs-with-css--2#/">stylés et animés avec CSS (slides)</a>. À la base, toute animation de transformation ou de transition qui peut être appliquée à un élément HTML peut l’être à un élément SVG. Mais certaines propriétés SVG qui ne peuvent pas être animées avec CSS peuvent l’être avec SVG. Par exemple un chemin SVG vient avec un ensemble de <strong>données</strong> (un attribut <code>d=""</code>) qui définit la forme de ce chemin. Cette donnée peut être modifiée et animée avec <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://en.wikipedia.org/wiki/Synchronized_Multimedia_Integration_Language"><span itemprop="name">SMIL</span></span>, mais pas avec CSS. C’est pourquoi les éléments SVG sont décrits au travers d’un ensemble d’attributs appelés les <em>attributs de présentation</em> SVG. Certains d’entre eux peuvent être déterminés, modifiés et animés avec CSS, d’autres non.</p>
+<p>Autrement dit, de nombreux effets et animations ne peuvent pas être obtenus avec CSS. Pour combler ces manques, on peut utiliser <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://fr.wikipedia.org/wiki/JavaScript"><span itemprop="name">JavaScript</span></span> ou les déclarations dérivées de SMIL.</p>
+<p>Si vous préférez utiliser JavaScript, je recommande <span itemprop="about" property="dc:subject"><a href="http://snapsvg.io/">snap.svg</a></span> de Dmitry Baranovskiy qui est décrit comme le “jQuery du SVG”. Voici <a href="https://codepen.io/collection/edpyJ/">quelques exemples</a> de ce qu’on peut faire.</p>
+<p>Si vous préférez une approche plus déclarative, vous pouvez utiliser les éléments d’animation SVG, nous allons les passer en revue dans ce guide&nbsp;!</p>
+<p>Un autre avantage de SMIL sur les animations JavaScript est que les animations JS ne fonctionnent pas lorsque le SVG est embarqué (<em>embedded</em>) en tant qu’<code>img</code> ou utilisé comme <code>background-image</code> dans CSS. Les animations SMIL fonctionnent, elles, dans les deux cas (ou le devraient, il faut aussi tenir compte des limitations des navigateurs). C’est un grand avantage à mon sens et vous pourriez choisir SMIL pour cette bonne raison. Cet article est conçu comme un guide pour vous aider à vous lancer dans SMIL dès maintenant.</p>
+<h2 id="compatibilitnavigateursetfallbacks">Compatibilité navigateurs et fallbacks</h2>
+<p>La <span itemprop="about" property="dc:subject">compatibilité navigateur des animations SMIL</span> est tout à fait convenable. Elles fonctionnent dans tous les navigateurs à l’exception d’Internet Explorer et Opera Mini. Pour une étude complète de la compatibilité, vous pouvez vous référer au tableau de <a href="https://caniuse.com/#feat=svg-smil">Can I Use</a>.</p>
+<p>Si vous avez besoin de solutions de repli (<em>fallback</em>) pour les animations SMIL, vous pouvez tester la compatibilité navigateurs à la volée avec <a href="http://modernizr.com/">Modernizr</a>. Lorsque SMIL n’est pas compatible, vous pouvez fournir une solution de repli (animations JavaScript, expérience utilisateur différente, etc.).</p>
+<h2 id="spcifierlacibledelanimationavecxlinkhref">Spécifier la cible de l’animation avec <code>xlink:href</code></h2>
+<p>Quel que soit celui des quatre éléments d’animations que vous choisissez, il vous faut spécifier la cible de l’animation définie par cet élément.</p>
+<p>Pour spécifier une cible, vous pouvez utiliser l’<span itemprop="about" property="dc:subject">attribut <code>xlink:href</code></span>. L’attribut prend une référence URI de l’élément cible de l’animation. <strong>L’élément cible doit faire partie du fragment de document SVG courant</strong>.</p>
+<pre><code>//SVG
+&lt;rect id="cool_shape" ... /&gt;
+
+&lt;animation xlink:href="#cool_shape" ... /&gt;
+</code></pre>
+<p>Si vous avez déjà rencontré des éléments d’animation SVG, vous les avez probablement vus imbriqués à l’intérieur de l’élément qu’ils sont supposés animer. C’est également possible selon la spécification&nbsp;:</p>
+<blockquote>
+<p>Si l’attribut <code>xlink:href</code> n’est pas fourni, l’élément cible sera l’élément immédiatement parent de l’élément d’animation courant</p>
+</blockquote>
+<pre><code>//SVG
+&lt;rect id="cool_shape" ... &gt;
+
+  &lt;animation ... /&gt;
+
+&lt;/rect&gt;
+</code></pre>
+<p>Donc si vous voulez “encapsuler” l’animation à l’intérieur de l’élément auquel elle s’applique, vous le pouvez. Et si vous préférez spécifier les animations ailleurs dans votre document, vous pouvez également le faire, et spécifier la cible de chaque animation en utilisant <code>xlink:href</code> —&nbsp;les deux façons de faire fonctionnent.</p>
+<h2 id="spcifierlapropritcibledelanimationavecattributenameetattributetype">Spécifier la propriété cible de l’animation avec <code>attributeName</code> et <code>attributeType</code></h2>
+<p>Tous les éléments d’animation partagent un autre attribut&nbsp;: <span itemprop="about" property="dc:subject"><code>attributeName</code></span>, qu’on utilise pour spécifier le nom de l’attribut que vous animez.</p>
+<p>Par exemple, si vous voulez animer la position du centre d’un cercle <code>circle</code> sur l’axe des x, vous pouvez le faire en spécifiant <code>cx</code> comme valeur de l’attribut <code>attributeName</code>.</p>
+<p><code>attributeName</code> prend une valeur unique, il ne prend pas de liste de valeurs, par conséquent vous ne pouvez animer qu’un seul atribut à la fois. Si vous voulez animer plus d’un attribut, vous devez définir plus d’une animation pour l’élément. Sur ce point au moins, CSS a un avantage sur SMIL. Mais là encore, en raison des valeurs possibles pour les autres attributs d’animation (que nous allons voir ensuite), il est logique de ne définir qu’un seul nom d’attribut à la fois, sans quoi les autres valeurs d’attributs pourraient devenir trop complexes à gérer.</p>
+<p>Lorsque vous spécifiez le nom d’attribut, vous pouvez ajouter un <span itemprop="about" property="dc:subject">préfixe XMLNS</span> (espace de nom XML) pour indiquer l’espace de nom de l’attribut. L’espace de nom peut également être spécifié en utilisant l’attribut <code>attributeType</code>. Par exemple, certains attributs font partie de l’espace de nom CSS (ce qui signifie que l’attribut peut être trouvé comme propriété CSS) et d’autres sont uniquement XML. Vous pouvez consulter <a href="https://slides.com/sarasoueidan/styling-animating-svgs-with-css#/10">une table de ces attributs ici</a>. Tous les attributs SVG ne figurent pas dans cette table, seulement ceux avec lesquels CSS fonctionne. Certains d’entre eux sont déjà disponibles comme propriétés CSS.</p>
+<p>Si la valeur de <span itemprop="about" property="dc:subject"><code>attributeType</code></span> n’est pas explicitement définie, ou si elle est définie comme <code>auto</code>, le navigateur doit d’abord chercher dans la liste des propriétés CSS un nom de propriété correspondant, et s’il n’en trouve pas, chercher le nom d’espace par défaut pour l’élément.</p>
+<p>Par exemple, le code suivant anime l’<code>opacity</code> d’un rectangle SVG. Puisque l’attribut <code>opacity</code> existe aussi en tant que propriété CSS, l’<code>attributeType</code> est défini à partir de l’espace de nom CSS&nbsp;:</p>
+<pre><code>//SVG
+&lt;rect&gt;
+  &lt;animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="5s" repeatCount="indefinite" /&gt;
+&lt;/rect&gt;
+</code></pre>
+<p>Nous allons voir les autres attributs d’animation dans les exemples qui suivent. Sauf indication contraire, tous les attributs d’animation sont communs à tous les éléments d’animation.</p>
+<h2 id="animerlattributdunlment">Animer l’attribut d’un élément</h2>
+<p>Commençons en déplaçant un cercle d’une position à une autre. Pour ce faire, nous allons modifier la valeur de son attribut <code>cx</code> qui spécifie la position de son centre sur l’axe des x.</p>
+<p>Nous allons utiliser l’élément <code>animate</code>. Cet élément est utilisé pour animer un attribut à la fois. Les attributs peuvent prendre des valeurs numériques et les couleurs sont généralement animées avec <code>animate</code>. Pour une liste des attributs qui peuvent être animés, vous pouvez vous référer à <span itemprop="about" property="dc:subject"><a href="https://www.w3.org/TR/SVG2/animate.html#AnimationAttributesAndProperties">cette table</a></span>.</p>
+<p>Si l’on veut modifier une valeur sur une période de temps donnée, on utilise les attributs <span itemprop="about" property="dc:subject"><code>from</code>, <code>to</code> et <code>dur</code></span>. Par ailleurs, si vous avez besoin de spécifier quand l’animation doit démarrer, vous utiliserez l’<span itemprop="about" property="dc:subject">attribut <code>begin</code></span>.</p>
+<pre><code>//SVG
+&lt;circle id="my-circle" r="30" cx="50" cy="50" fill="orange" /&gt;
+
+  &lt;animate 
+    xlink:href="#my-circle"
+    attributeName="cx"
+    from="50"
+    to="450" 
+    dur="1s"
+    begin="click"
+    fill="freeze" /&gt;
+</code></pre>
+<p>Dans l’exemple ci-dessus, nous avons défini un cercle, puis nous appelons une animation sur ce cercle. Le centre du cercle se déplace de sa position initiale (50 unités) vers sa position finale (450 unités) sur l’axe des x.</p>
+<p>La valeur de <code>begin</code> est définie comme <code>click</code>. Cela signifie que le cercle se déplacera lorsqu’on cliquera dessus. Vous pouvez également définir cette valeur comme une unité de temps, par exemple <code>begin="0s"</code> démarrera l’animation dès que la page est chargée. Vous pouvez <strong>retarder l’animation</strong> en donnant une valeur de temps positive —&nbsp;par exemple <code>begin="2s"</code> qui démarrera l’animation deux secondes après le chargement de la page.</p>
+<p>Ce qui est encore plus intéressant avec <code>begin</code>, c’est que vous pouvez définir des valeurs telles que <code>click + 1s</code> pour démarrer une animation <strong>une seconde après que l’élément ait été cliqué</strong>. De plus, vous pouvez utiliser d’autres valeurs qui vous permettent de synchroniser les animations sans avoir à calculer la durée et les retards des autres animations. Nous verrons cela tout à l’heure.</p>
+<p>L’attribut <code>dur</code> est similaire à son équivalent CSS <code>animation-duration</code>.</p>
+<p>Les attributs <code>from</code> et <code>to</code> sont similaires aux keyframes <code>from</code> et <code>to</code> dans un block d’animation CSS <code>@keyframe</code>&nbsp;:</p>
+<pre><code>//CSS
+@keyframes moveCircle {
+  from { /* valeur de départ */ }
+  to { /* valeur d’arrivée */ }
+}
+</code></pre>
+<p>L’attribut <code>fill</code> (qui porte malencontreusement le même nom que l’attribut <code>fill</code> définissant la couleur de remplissage d’un élément) est similaire à la propriété <code>animation-fill-mode</code> qui spécifie si l’élément devrait ou non revenir à son état initial à la fin de l’animation. Les valeurs en SVG sont similaires à leur équivalent CSS, à part deux noms&nbsp;:</p>
+<ul>
+<li><code>freeze</code> : on indique que l’effet doit rester dans son état final, l’effet d’animation est “gelé” (<em>freeze</em>) pour la durée d’existence de la page, ou jusqu’au moment où l’on redémarre l’animation.</li>
+<li><code>remove</code> : l’effet d’animation est retiré (il ne s’applique plus) lorsque la durée de l’animation est passée. L’animation n’affecte plus la cible, sauf si elle est redémarrée.</li>
+</ul>
+<p>Essayez de modifier les valeurs dans cette <a href="https://codepen.io/SaraSoueidan/pen/e883265849147a0a4b712c5960c448a8">démo CodePen</a> pour voir comment cela affecte l’animation (si vous ne pouvez le faire directement à l’écran, cliquez sur “Edit on CodePen”)&nbsp;:</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_e883265849147a0a4b712c5960c448a8" src="./Guide des animations SVG (SMIL)_files/e883265849147a0a4b712c5960c448a8.html" scrolling="no" frameborder="0" height="200" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 30" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<p>L’attribut <code>by</code> est utilisé pour spécifier un décalage de l’animation. Comme son nom le suggère, vous pouvez spécifier le nombre ou la façon par (<em>by</em>) lequel vous voulez que l’animation progresse. L’effet de <code>by</code> est surtout visible lorsque vous progressez dans la durée de l’animation en étapes successives, un peu comme avec <a href="http://lea.verou.me/2011/09/pure-css3-typing-animation-with-steps/">la fonction CSS <code>steps()</code></a>. L’équivalent SVG de la fonction <code>steps()</code> est <code>calcMode="discrete"</code>. Nous verrons l’<span itemprop="about" property="dc:subject">attribut <code>calcMode</code></span> un peu plus loin dans cet article.</p>
+<p>Un autre cas où l’effet de <code>by</code> est plus visible est quand vous spécifiez uniquement l’attribut <code>to</code>. Un exemple serait de l’utiliser ave l’élément <code>set</code> que nous allons également voir tout à l’heure.</p>
+<p>Et <em>last but not least</em>, <code>by</code> peut être utile quand vous travaillez avec des animations additives et accumulatives. Plus d’infos tout à l’heure.</p>
+<h3 id="redmarrerlesanimationsavecrestart">Redémarrer les animations avec <code>restart</code></h3>
+<p>Il peut être utile d’empêcher une animation d’être redémarrée tant qu’elle est active. Pour ce faire, SVG propose l’attribut <code>restart</code>. Vous pouvez lui donner l’une des trois valeurs suivantes&nbsp;:</p>
+<ul>
+<li><code>always</code> : l’animation peut être redémarrée n’importe quand. C’est la valeur par défaut.</li>
+<li><code>whenNotActive</code> : l’animation peut être redémarrée seulement quand elle n’est pas active (c’est à dire lorsqu’elle est arrivée à son terme). Les tentatives de redémarrage pendant sa durée d’activité sont ignorées.</li>
+<li><code>never</code> : l’élément ne peut pas être redémarré pour le reste de la durée courante du parent qui la contient. Dans le cas de SVG, puisque le conteneur de temps parent est le fragment de document, l’animation ne peut pas être redémarrée pour le reste de la durée du document.</li>
+</ul>
+<h3 id="nommerlesanimationsetlessynchroniser">Nommer les animations et les synchroniser</h3>
+<p>Supposons que nous voulions animer la position <em>et</em> la couleur du cercle, afin que le changement de couleur se produise à la fin de l’animation de déplacement. Nous pouvons le faire en donnant à la valeur de <code>begin</code> de l’animation de changement de couleur la même valeur que la <code>dur</code>ée de l’animation de déplacement. C’est ce que nous ferions normalement en CSS.</p>
+<p>Cependant, SMIL offre une fonctionnalité intéressante de traitement des événements. Nous avons mentionné précédemment que l’attribut <code>begin</code> acceptait des valeurs telles que <code>click + 5s</code>. Cette valeur est appelée “valeur d’événement”, et elle est constituée dans cet exemple d’une référence à l’événement (le clic) suivie d’une “valeur d’horloge”. Ce qui est intéressant ici, c’est le nom de la seconde partie: la “valeur d’horloge”. Pourquoi pas simplement une “valeur de temps”&nbsp;? Eh bien la réponse est que vous pouvez littéralement utiliser <a href="https://www.w3.org/TR/SVG2/animate.html#ClockValueSyntax">une valeur d’horloge</a> comme “10min” ou “01:33” qui est l’équivalent de 1 minute et 33 secondes, ou même “02:30:03” (deux heures, trente minutes et trois secondes). À l’heure où nous écrivons, les valeurs d’horloge <em>ne sont implémentées complètement dans aucun navigateur</em>.</p>
+<p>Donc, si nous revenons à la démo précédente et utilisons <code>click + 01:30</code>, si un navigateur s’avérait compatible, l’animation serait déclenchée 1 minute 30 après qu’on ait cliqué sur le cercle.</p>
+<p>Un autre type de valeur acceptée est l’ID d’une autre animation suivi d’une référence d’événement. Si vous aviez deux animations (ou plus), qu’elles s’appliquent au même élément ou pas, et que vous vouliez les synchroniser de façon à ce que l’une démarre en fonction de l’autre, vous pourriez le faire sans avoir à connaître la durée de l’autre animation.</p>
+<p>Par exemple, dans la démo suivante, le rectangle bleu commence à bouger 1 seconde après que l’animation du cercle ait démarré. On donne pour cela une ID à chaque animation, puis on utilise cette ID avec l’événement <code>begin</code> comme on le voit dans le code suivant&nbsp;:</p>
+<pre><code>//SVG
+&lt;circle id="orange-circle" r="30" cx="50" cy="50" fill="orange" /&gt;
+
+&lt;rect id="blue-rectangle" width="50" height="50" x="25" y="200" fill="#0099cc"&gt;&lt;/rect&gt;
+
+  &lt;animate 
+    xlink:href="#orange-circle"
+    attributeName="cx"
+    from="50"
+    to="450" 
+    dur="5s"
+    begin="click"
+    fill="freeze" 
+    id="circ-anim" /&gt;
+
+  &lt;animate 
+    xlink:href="#blue-rectangle"
+    attributeName="x" 
+    from="50"
+    to="425" 
+    dur="5s"
+    begin="circ-anim.begin + 1s"
+    fill="freeze" 
+    id="rect-anim" /&gt;
+</code></pre>
+<p>La partie <code>begin="circ-anim.begin + 1s"</code> dit au navigateur de démarrer l’animation du rectangle 1 seconde après le début de celle du cercle. Vous pouvez voir l’effet dans cette démo&nbsp;:</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_55195eee8647f438525b852000504c7a" src="./Guide des animations SVG (SMIL)_files/55195eee8647f438525b852000504c7a.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 29" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<p>Vous pouvez également démarrer l’animation du rectangle après que celle du cercle soit arrivée à son terme, en utilisant l’<span itemprop="about" property="dc:subject">événement <code>end</code></span>&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#blue-rectangle"
+  attributeName="x" 
+  from="50"
+  to="425" 
+  dur="5s"
+  begin="circ-anim.end"
+  fill="freeze" 
+  id="rect-anim"/&gt;
+</code></pre>
+<p>Vous pourriez même la démarrer <em>avant</em> la fin de l’animation du cercle&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#blue-rectangle"
+  attributeName="x" 
+  from="50"
+  to="425" 
+  dur="5s"
+  begin="circ-anim.end - 3s"
+  fill="freeze" 
+  id="rect-anim"/&gt;
+</code></pre>
+<h3 id="rpterlesanimations">Répéter les animations</h3>
+<p>Si vous voulez qu’une animation se produise plus d’une fois, vous pouvez utiliser l’<span itemprop="about" property="dc:subject">attribut <code>repeatCount</code></span> en spécifiant le nombre de fois que vous voulez répéter l’animation, ou bien utiliser le mot-clé <code>indefinite</code> pour qu’elle se répète indéfiniment. Ainsi, si nous voulions que l’animation du cercle se produise deux fois, le code serait&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#orange-circle"
+  attributeName="cx"
+  from="50"
+  to="450" 
+  dur="5s"
+  begin="click"
+  repeatCount="2"
+  fill="freeze" 
+  id="circ-anim" /&gt;
+</code></pre>
+<p>Dans la démo ci-dessous, j’ai donné une valeur de 2 à <code>repeatCount</code> sur le cercle, et <code>indefinite</code> sur le carré&nbsp;:</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_d8e38406a5a90f4392a4bb85f6aadd78" src="./Guide des animations SVG (SMIL)_files/d8e38406a5a90f4392a4bb85f6aadd78.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 28" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<p>Remarquez que l’animation redémarre à partir de la valeur initiale <code>from</code> plutôt qu’à partir du point où elle est arrivée. à la fin de l’animation. Malheureusement, SMIL n’offre pas de manière d’aller et venir entre les valeurs de départ et d’arrivée, contrairement à CSS. La propriété <code>animation-direction</code> de CSS spécifie si une animation doit repartir en sens inverse sur tous les cycles ou sur certains d’entre eux. La valeur <code>animate-direction: alternate</code> indique que les cycles d’animation impairs se produisent dans la direction normale et que les cycles pairs se produisent en sens inverse. Le premier cycle va du début à la fin, le second va de la fin au début, etc.</p>
+<p>Dans SMIL, il faudrait utiliser JavaScript pour changer explicitement les valeurs des attributs <code>from</code> et <code>to</code>. Jon McPartland de Big bite Creative a écrit <a href="http://bigbitecreative.com/introduction-svg-animation/">un article</a> à ce sujet pour expliquer comment il a créé <a href="https://jsfiddle.net/unhw/kk5CG/3/">une animation d’icône de menu</a>.</p>
+<p>Une autre façon de contourner le problème serait de spécifier la valeur d’arrivée comme étant une valeur intermédiaire et de faire que la valeur finale soit identique à la valeur initiale. Par exemple, vous pouvez définir une animation commençant <code>from</code> une certaine valeur et se terminant à la même valeur, mais en donnant comme valeur intermédiaire entre <code>from</code> et <code>to</code> la valeur que vous <em>auriez utilisé</em> comme valeur finale.</p>
+<p>En CSS, on ferait quelque chose comme cela&nbsp;:</p>
+<pre><code>//CSS
+@keyframes example {
+  from, to {
+    left: 0;
+  }
+
+  50% {
+    left: 300px;
+  }
+}
+</code></pre>
+<p>L’équivalent dans SMIL est d’utiliser l’attribut <code>values</code> que nous expliquerons sous peu.</p>
+<p>Ceci étant dit, la solution contournée ci-dessus peut fonctionner ou non pour vous selon le type d’animation que vous cherchez et selon que vous enchaîniez ou non des animations, que vous les répétiez ou que vous les ajoutiez.</p>
+<p>Voci une jolie animation infinie qui utilise des retards dans les débuts d’animation, par Miles Elam&nbsp;:</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_kprKm" src="./Guide des animations SVG (SMIL)_files/kprKm.html" scrolling="no" frameborder="0" height="387" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 27" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<h3 id="restreindreletempsderptitionavecrepeatdur">Restreindre le temps de répétition avec <code>repeatDur</code></h3>
+<p>Une répétition indéfinie peut s’avérer ennuyeuse ou peu <em>user-friendly</em> à la longue, réduire le temps de répétition est donc parfois une bonne solution. C’est ce qu’on appelle le <em>temps de présentation</em>.</p>
+<p>Le temps de présentation est spécifié à l’aide de l’<span itemprop="about" property="dc:subject">attribut <code>repeatDur</code></span> dont la syntaxe est similaire à celle de la valeur d’horloge, à ceci près qu’au lieu d’être relatif à un autre événement d’animation ou d’interaction, il est relatif au début du document.</p>
+<p>Par exemple, le code suivant stoppera la répétition de l’animation 1 minute et 30 secondes après le début du document&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#orange-circle"
+  attributeName="cx"
+  from="50"
+  to="450" 
+  dur="2s"
+  begin="0s"
+  repeatCount="indefinite"
+  repeatDur="01:30" 
+  fill="freeze" 
+  id="circ-anim" /&gt;
+</code></pre>
+<p>et voici la démo&nbsp;:</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_366b9fba478e7ac1de2188f5a2594c3c" src="./Guide des animations SVG (SMIL)_files/366b9fba478e7ac1de2188f5a2594c3c.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 26" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<h3 id="synchroniserenfonctiondunombrederptitions">Synchroniser en fonction du nombre de répétitions</h3>
+<p>Revenons un peu en arrière pour reprendre le sujet de la synchronisation de deux animations. Avec SMIL vous pouvez synchroniser des animations de manière à ce qu’une animation commence en fonction du nombre de répétitions d’une autre. Par exemple, vous pouvez commencer une animation après la n-ième répétition d’une autre animation, plus ou moins une durée que vous pouvez ajouter.</p>
+<p>L’exemple qui suit fait débuter l’animation du rectangle à la deuxième répétition de l’animation du cercle&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#blue-rectangle"
+  attributeName="x" 
+  from="50"
+  to="425" 
+  dur="5s"
+  begin="circ-anim.repeat(2)"
+  fill="freeze" 
+  id="rect-anim" /&gt;
+</code></pre>
+<p>Et voici une démo dans laquelle l’animation du rectangle commence 1 seconde après la deuxième répétition de l’animation du cercle.</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_LEZbdz" src="./Guide des animations SVG (SMIL)_files/LEZbdz.html" scrolling="no" frameborder="0" height="446" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 25" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//assets.codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<p>Et voici <a href="https://oreillymedia.github.io/svg-essentials-examples/ch12/sync_repetition.html">un autre exemple</a>, que David Eisenberg a créé pour son livre <a href="http://shop.oreilly.com/product/9780596002237.do?sortby=bestSellers">SVG Essentials, 2e édition</a>.</p>
+<h3 id="contrlerlesvaleursdekeyframeaveckeytimesetvalues">Contrôler les valeurs de keyframe avec <code>keyTimes</code> et <code>values</code></h3>
+<p>En CSS, nous pouvons spécifier les valeurs que nous voulons donner à notre propriété animée pendant le cours de l’animation. Par exemple, si nous animons le décalage à gauche d’un élément, au lieu de l’animer de 0 à 300 directement, nous pouvons l’animer de façon à ce qu’il prenne certaines valeurs pendant certaines périodes de temps&nbsp;:</p>
+<pre><code>//CSS
+@keyframes example {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 320px;
+  }
+  80% {
+    left: 270px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+</code></pre>
+<p>0%, 50%, 80% et 100% sont les keyframes (étapes) de l’animation et les valeurs comprises dans chaque bloc sont celles de chaque keyframe. L’effet décrit ci-dessus est celui d’un élément qui rebondit contre un mur et revient à la position finale.</p>
+<p>Dans SMIL, vous pouvez contrôler les valeurs par étape de la même façon, mais la syntaxe est différente.</p>
+<p>Pour spécifier les keyframes, on utilise l’<span itemprop="about" property="dc:subject">attribut <code>keyTimes</code></span>. Puis pour spécifier la valeur de la propriété animée à chaque étape, on utilise les attributs <code>values</code>. Les <span itemprop="about" property="dc:subject">conventions de nommage de SMIL</span> sont très pratiques.</p>
+<p>Si je reviens à notre cercle et que j’utilise des valeurs similaires à celles de l’exemple CSS précédent, le code ressemblera à ceci&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#orange-circle"
+  attributeName="cx"
+  from="50"
+  to="450" 
+  dur="2s"
+  begin="click"
+  values="50; 490; 350; 450"
+  keyTimes="0; 0.5; 0.8; 1"
+  fill="freeze" 
+  id="circ-anim" /&gt;
+</code></pre>
+<p>Qu’avons-nous fait ici ?</p>
+<p>La première chose à remarquer est que les temps et valeurs intermédiaires des keyframes sont spécifiés sous forme de liste. L’attribut <code>keyTimes</code> est une liste de valeurs temporelles séparées par des points-virgules, utilisée pour contrôler l’avancée de l’animation. Chaque temps dans la liste correspond à une valeur dans la liste de l’attribut <code>values</code> et définit le moment où la valeur est utilisée dans la fonction d’animation. Chaque valeur temporelle dans la liste <code>keyTimes</code> est comprise entre 0 et 1 (compris), la différence avec CSS est donc qu’au lieu d’être indiquée en pourcentage, elle l’est sous forme de fraction.</p>
+<p>Voici la démo du code précédent. Cliquez sur le cercle pour démarrer l’animation.</p>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_ab87fd834cdf0af7ec27850e81b1c08a" src="./Guide des animations SVG (SMIL)_files/ab87fd834cdf0af7ec27850e81b1c08a.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 24" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<p>Remarquez que si on utilise une liste de valeurs, l’animation appliquera les valeurs dans l’ordre pendant le cours de l’animation. De plus, si une liste de <code>values</code> est spécifiée, toute valeur d’attributs <code>from</code>, <code>to</code> et <code>by</code> est ignorée.</p>
+<p>Autre chose à savoir : vous pouvez utiliser l’attribut <code>values</code> sans l’attribut <code>keyTimes</code> —&nbsp;les valeurs sont automatiquement espacées de manière régulière dans le temps (pour chaque valeur <code>calcMode</code> différente de <code>paced</code>, voir section suivante).</p>
+<h3 id="contrlerlavitessedanimationavecuneasingpersonnaliscalcmodeetkeysplines">Contrôler la vitesse d’animation avec un easing personnalisé, <code>calcMode</code> et <code>keySplines</code></h3>
+<p>Je vais comparer à nouveau SMIL et CSS parce qu’il est plus facile de comparer les syntaxes et les concepts lorsqu’on connaît déjà les animations CSS.</p>
+<p>En CSS, vous pouvez choisir de modifier le rythme de l’animation, uniforme par défaut, et de spécifier une fonction d’easing personnalisée qui contrôle l’animation, grâce à la propriété <code>animation-timing-function</code>. La fonction timing peut être l’un des mots-clés prédéfinis ou une <a href="https://fr.wikipedia.org/wiki/Courbe_de_B%C3%A9zier">courbe de Bézier</a> cubique. Cette dernière peut être créée via un outil tel que <a href="http://cubic-bezier.com/#.17,.67,.85,.06">celui proposé par Lea Verou</a>.</p>
+<p>Dans SMIL, le rythme de l’animation est spécifié avec l’attribut <code>calcMode</code>. Par défaut, l’animation est linéaire pour tous les éléments, à l’exception de <code>animateMotion</code> (que nous verrons tout à l’heure). Outre la valeur <code>linear</code>, vous pouvez donner une valeur de <code>discrete</code>, <code>paced</code> ou <code>spline</code>.</p>
+<ul>
+<li><code>discrete</code> spécifie que l’animation sautera d’une valeur à l’autre sans interpolation. C’est la même chose que la fonction <code>steps()</code> en CSS.</li>
+<li><code>paced</code> est similaire à <code>linear</code>, mais il ignorera tout les temps intermédiaires définis par <code>keyTimes</code>. Il calcule la distance entre les valeurs consécutives et divise le temps en fonction. Si vos valeurs sont toutes en ordre linéaire, vous ne remarquerez pas la différence. Mais si elles vont en avant et en arrière, ou si ce sont des couleurs (qui sont traitées comme des valeurs vectorielles tri-dimensionnelles), vous verrez les valeurs intermédiaires. Ci-dessous, voici une animation créée par Amelia Bellamy-Royds qui montre la différence entre les trois valeurs <code>calcMode</code> mentionnées jusqu’ici.</li>
+</ul>
+<div class="cp_embed_wrapper"><iframe id="cp_embed_EzAju" src="./Guide des animations SVG (SMIL)_files/EzAju.html" scrolling="no" frameborder="0" height="766" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 23" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+<script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<ul>
+<li>La quatrième valeur acceptée par <code>calcMode</code> est <code>spline</code>. Elle interpole d’une valeur à l’autre de la liste des <code>values</code> selon une fonction temporelle définie par une courbe de bézier cubique. Les points sur la spline sont définis dans l’attribut <code>keyTimes</code> et les points de contrôle pour chaque intervalle sont définis dans l’<span itemprop="about" property="dc:subject">attribut <code>keySplines</code></span>.</li>
+</ul>
+<p><span aria-hidden="true" data-icon="☞"></span> <em>NdT : pour mieux comprendre les keysplines, vous pouvez consulter cette page sur l’<a href="http://books.google.fr/books?id=7MtkGjIgOxkC&amp;pg=PA323&amp;lpg=PA323&amp;dq=keysplines+courbes+de+b%C3%A9zier&amp;source=bl&amp;ots=TAmY4E6dq9&amp;sig=KSp_p_fQa2SxglCFOfSZPfie0Fk&amp;hl=fr&amp;sa=X&amp;ei=oKdeVOKdGMPaaIjUgFA&amp;ved=0CCsQ6AEwAg#v=onepage&amp;q=keysplines%20courbes%20de%20b%C3%A9zier&amp;f=false">interpolation spline</a>, ou celle-ci sur <a href="http://pilatinfo.org/learnsvg/html/chapitre09/page09-1.htm">keySplines</a>. Vous pouvez également regarder la vidéo sur cette <a href="https://la-cascade.io/sketch-3-maitriser-les-courbes-de-bezier/">présentation des courbes de bézier</a> et constater la présence de keySplines dans le codePen qui suit</em>.</p>
+<p>Vous avez remarqué un nouvel attribut dans la dernière phrase&nbsp;: <code>keySplines</code>. À quoi sert-il&nbsp;?</p>
+<p>Là encore, reprenons les équivalences CSS.</p>
+<p>En <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing"><link itemprop="url" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"><span itemprop="name">CSS</span></span>, vous pouvez spécifier le rythme de l’animation <em>à l’intérieur</em> de chaque keyframe, au lieu de le spécifier pour toute l’animation. Cela vous donne un meilleur contrôle de chaque keyframe. Un bon exemple de cette fonctionnalité est l’effet de la balle qui rebondit. Les keyframes ressembleraient à ceci&nbsp;:</p>
+<pre><code>//CSS
+@keyframes bounce {
+  0% {
+      top: 0;
+      animation-timing-function: ease-in;
+  }
+  15% {
+      top: 200px;
+      animation-timing-function: ease-out;
+  }
+  30% {
+      top: 70px;
+      animation-timing-function: ease-in;
+  }
+  45% {
+      top: 200px;
+      animation-timing-function: ease-out;
+  }
+  60% {
+      top: 120px;
+      animation-timing-function: ease-in;
+  }
+  75% {
+      top: 200px;
+      animation-timing-function: ease-out;
+  }
+  90% {
+      top: 170px;
+      animation-timing-function: ease-in;
+  }
+  100% {
+      top: 200px;
+      animation-timing-function: ease-out;
+  }
+</code></pre>
+<p>}</p>
+<p>À la place des mots-clés définissant les fonctions d’easing, nous aurions pu utiliser les courbes de bézier correspondantes&nbsp;:</p>
+<ul>
+<li><code>ease-in</code> = <code>cubic-bezier(0.47, 0, 0.745, 0.715)</code></li>
+<li><code>ease-out</code> = <code>cubic-bezier(0.39, 0.575, 0.565, 1)</code></li>
+</ul>
+<p>Commençons en spécifiant les keyTimes et la liste de <code>values</code> pour donner à notre cercle orange le même effet rebondissant.</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#orange-circle"
+  attributeName="cy"
+  from="50"
+  to="250" 
+  dur="3s"
+  begin="click"
+  values="50; 250; 120;250; 170; 250; 210; 250"
+  keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+  fill="freeze" 
+  id="circ-anim" /&gt;
+</code></pre>
+<p>L’animation commencera au clic et s’arrêtera une fois atteinte la valeur finale. Ensuite, pour spécifier le rythme de chaque keyframe, nous allons ajouter l’attribut <code>keySplines</code>.</p>
+<p>L’attribut <code>keySplines</code> accepte un ensemble de points de contrôle de Bézier associés avec la liste <code>keyTimes</code>, qui définissent une fonction cubique de Bézier contrôlant l’allure de chaque intervalle. La valeur de l’attribut est une liste de points de contrôles séparés par un point-virgule. Chaque point de contrôle est décrit par un ensemble de quatre valeurs&nbsp;: x1 y1 x2 y2, représentant les points de contrôle Bézier pour un segment temporel. Les valeurs doivent être comprises entre 0 et 1 et l’attribut est ignoré si le <code>calcMode</code> n’est pas réglé sur <span itemprop="about" property="dc:subject"><code>spline</code></span>.</p>
+<p>Plutôt que de prendre des fonctions de Bézier comme valeurs, les <code>keySplines</code> prennent les coordonnées des deux points de contrôle utilisés pour dessiner la courbe. Les points de contrôle peuvent être vus sur ces captures d’écran prises sur le site de Lea Verou. On peut voir les coordonnées de chaque point, coloriées de la même façon que le point lui-même. Ce sont ces valeurs que nous allons utiliser avec l’attribut <code>keySplines</code> pour définir l’allure des animations keyframe.</p>
+<p>Dans SMIL ces valeurs peuvent être séparées par des virgules ou par un espace. Les valeurs <code>keyTimes</code> qui définissent le segment associé sont les “points d’ancrage” Bézier, et les valeurs <code>keySplines</code> sont les points de contrôle. Par conséquent, il doit y avoir un ensemble de points de contrôle <em>en moins</em> par rapport au nombre de <code>keyTimes</code>.</p>
+<figure role="group"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url" src="./Guide des animations SVG (SMIL)_files/control-points-compressor.png" width="585" height="557" alt=""><meta itemprop="width" content="585"><meta itemprop="height" content="557"></span></figure>
+<p>Si nous revenons à notre example de ballon qui rebondit, les coordonnées des points de contrôle pour les fonctions d’<code>ease-in</code> et <code>ease-out</code> apparaissent dans les images suivantes&nbsp;:</p>
+<figure role="group"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url" src="./Guide des animations SVG (SMIL)_files/ease-in-compressor.png" width="479" height="579" alt=""><meta itemprop="width" content="479"><meta itemprop="height" content="579"></span></figure>
+<figure role="group"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url" src="./Guide des animations SVG (SMIL)_files/ease-out-compressor.png" width="466" height="570" alt=""><meta itemprop="width" content="466"><meta itemprop="height" content="570"></span></figure>
+<p>Pour traduire cela en élément d’animation SVG, nous utilisons le code suivant&nbsp;:</p>
+<pre><code>//SVG
+&lt;animate 
+  xlink:href="#orange-circle"
+  attributeName="cy"
+  from="50"
+  to="250" 
+  dur="3s"
+  begin="click"
+  values="50; 250; 120; 250; 170; 250; 210; 250"
+  keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+  keySplines=".42 0 1 1;
+              0 0 .59 1;
+              .42 0 1 1;
+              0 0 .59 1;
+              .42 0 1 1;
+              0 0 .59 1;
+              .42 0 1 1;"
+  fill="freeze" 
+  id="circ-anim"/&gt;
+</code></pre>
+<p>Voici la démo :</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_ecd0f3197b5fc0d7950ed94cc8afb97f" src="./Guide des animations SVG (SMIL)_files/ecd0f3197b5fc0d7950ed94cc8afb97f.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 22" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Si vous ne voulez spécifier qu’une fonction d’easing pour l’animation entière, sans valeurs intermédiaires, il vous faut quand même spécifier les keyframes en utilisant l’attribut <code>keyTimes</code>, mais vous n’indiquez que les keyframes de début et de fin, c’est à dire <code>0; 1</code> et aucune <code>values</code> intermédiaire.</p>
+<h3 id="ajouteretaccumulerdesanimations">Ajouter et accumuler des animations</h3>
+<p>Parfois il peut être utile de définir qu’une animation commence là où la précédente s’est achevée. Ou bien de définir qu’une animation utilise les valeurs accumulées des animations précédentes comme valeur à partir de laquelle poursuivre. Pour cela, SVG a deux attributs bien nommés&nbsp;: <span itemprop="about" property="dc:subject"><code>additive</code></span> et <span itemprop="about" property="dc:subject"><code>accumulate</code></span>.</p>
+<p>Supposons que nous ayons un élément que nous voulons élargir, ou une ligne que nous souhaitons allonger, ou un élément que nous voulons faire évoluer pas à pas d’une position à une autre. Cette fonctionnalité est particulièrement utile pour les animations répétées.</p>
+<p>Comme pour toute autre animation, nous allons spécifier les valeurs <code>from</code> et <code>to</code>. Cependant, lorsque nous réglons la valeur d’<code>additive</code> sur <code>sum</code>, les valeurs de <code>from</code> et <code>to</code> seront relatives à la valeur originale de l’attribut animé. Si nous revenons à notre cercle, la position initiale de <code>cx</code> est 50. Lorsque nous fixons <code>from="0"</code> <code>to="100"</code>, le point de départ est donc 50 et le point d’arrivée est 100+50, c’est donc en pratique comme nous écrivions "<code>from="50" to="150"</code>".</p>
+<p>Nous obtenons le résultat suivant&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_77b1afdefe05eff8f1d538e0f3f8727e" src="./Guide des animations SVG (SMIL)_files/77b1afdefe05eff8f1d538e0f3f8727e.html" scrolling="no" frameborder="0" height="290" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 21" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>C’est tout ce que fait l’attribut <code>additive</code>. Il indique simplement si les valeurs <code>from</code> et <code>to</code> doivent être relatives à la valeur courante (ici, de <code>cx</code>) ou non. L’attribut prend l’une des deux valeurs suivantes&nbsp;: <code>sum</code> ou <code>replace</code>. Cette dernière est la valeur par défaut et elle signifie que les valeurs de <code>from</code> et <code>to</code> remplaceront les valeurs courantes ou originales —&nbsp;ce qui peut causer un saut bizarre juste avant le début de l’animation (faites l’expérience en remplaçant <code>sum</code> par <code>replace</code> dans l’exemple précédent).</p>
+<p>Mais comment faire si nous voulons que les valeurs soient additionnées de manière telle que la seconde animation débute au point d’arrivée de la première&nbsp;? C’est ici qu’intervient l’attribut <code>accumulate</code>.</p>
+<p>L’attribut <code>accumulative</code> contrôle si l’animation est, ou non, cumulative. La valeur par défaut est <code>none</code>, ce qui signifie que par exemple lorsque l’animation est répétée elle recommence depuis le début. Vous pouvez la régler sur <code>sum</code>, qui spécifie que chaque répétition repart de la dernière valeur.</p>
+<p>Si nous reprenons notre animation, <code>accumulate="sum"</code> donnera le résultat suivant&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_e21b7dd0af3d0a6db2828362bee24d48" src="./Guide des animations SVG (SMIL)_files/e21b7dd0af3d0a6db2828362bee24d48.html" scrolling="no" frameborder="0" height="290" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 20" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>L’attribut <code>accumulate</code> est ignoré si la valeur d'attribut cible n’est pas additionnable ou si l’élément d’animation ne se répète pas. Il sera également ignoré si la fonction d’animation est définie uniquement avec l’attribut <code>to</code>.</p>
+<h3 id="spcifierlafindelanimationavecend">Spécifier la fin de l’animation avec <code>end</code></h3>
+<p>En plus de définir le début d’une animation, on peut définir sa fin, avec l’attribut <code>end</code>. Par exemple, nous pouvons déterminer qu’une animation se répètera indéfiniment, puis la faire cesser lorsqu’un autre élément débute son animation. L’attribut <code>end</code> accepte des valeurs similaires à celles de <code>begin</code>. On peut spécifier des valeurs absolues ou relatives pour le temps, les répétitions, les événements, etc.</p>
+<p>Par exemple, dans la démo qui suit, le cercle orange se déplace lentement sur une période de 30 secondes. Le cercle vert s’animera quand on clique dessus, et l’animation du cercle orange cessera au moment où débutera celle du cercle vert. Cliquez sur le cercle vert pour voir le cercle orange s’arrêter&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_1a67cdf89a865d044e2993a81a4f26be" src="./Guide des animations SVG (SMIL)_files/1a67cdf89a865d044e2993a81a4f26be.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 19" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>On peut évidemment réaliser le même genre de synchronisation d’animations lorsqu’il s’agit de deux animations appliquées au même élément. Par exemple, supposons que nous réglions la couleur du cercle de façon à ce qu’elle s'anime indéfiniment en passant d’une valeur à une autre. Puis, lorsqu’on clique sur l’élément il se déplace vers l’autre côté. Nous voulons que l’animation couleur s’arrête dès qu’on clique sur l’élément et que l’animation de déplacement est lancée.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_71fa25f8bd43d55ca04fa2259cb7d5f5" src="./Guide des animations SVG (SMIL)_files/71fa25f8bd43d55ca04fa2259cb7d5f5.html" scrolling="no" frameborder="0" height="280" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 18" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h3 id="dfinirdesintervallesdanimationavecplusieursbeginetend">Définir des intervalles d’animation avec plusieurs <code>begin</code> et <code>end</code></h3>
+<p>En fait, les attributs <code>begin</code> et <code>end</code> acceptent tous les deux une liste de valeurs séparées par un point-virgule. Chaque valeur dans l’attribut <code>begin</code> correspondra à une valeur dans l’attribut <code>end</code>, formant ainsi des intervalles d’animation actifs et inactifs.</p>
+<p>On peut le voir comme une voiture qui se déplace, avec les roues de la voiture qui seraient actives et inactives pendant certaines périodes de temps, selon que la voiture bouge ou pas. Vous pouvez même créer l’effet de la voiture animée en appliquant deux animations à la voiture&nbsp;: l’une qui déplace la voiture le long d’un chemin qui est aussi une animation additive et accumulative, et l’autre animation qui fait tourner les roues de la voiture dans des intervalles synchronisés avec le déplacement.</p>
+<p>La démo suivante est un exemple de débuts et fins multiples (c’est à dire d’intervalles multiples), avec un rectangle qui tourne sur lui-même à intervalles déterminés, passant d'un état actif à inactif (faites rerun si l’animation s’est terminée).</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_cb46822d292b7a542eba729c897ed046" src="./Guide des animations SVG (SMIL)_files/cb46822d292b7a542eba729c897ed046.html" scrolling="no" frameborder="0" height="266" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 17" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Remarquez que dans cet exemple j’ai utilisé l’élément <code>&lt;animateTransform&gt;</code> pour faire tourner le rectangle sur son centre. Nous allons revenir sur cet élément plus en détail tout à l’heure.</p>
+<p>Remarquez également que même si vous réglez <code>repeatCount</code> sur <code>indefinite</code> les valeurs <code>end</code> l’emporteront et l’animation ne se répètera pas indéfiniment.</p>
+<h3 id="restreindreladuredactivitdunlmentavecminetmax">Restreindre la durée d’activité d’un élément avec <code>min</code> et <code>max</code></h3>
+<p>De même qu’on peut restreindre le nombre de répétitions d’une animation, on peut restreindre la <strong>durée active</strong> d’une animation. Les attributs <code>min</code> et <code>max</code> spécifient la valeur minimum et maximum de la durée active. On a ainsi un moyen de contrôler les limites inférieures et supérieures de la durée active de l’élément. Chacun de ces attributs prend une valeur de type valeur d’horloge.</p>
+<p>Pour <code>min</code>, cela spécifie la longueur de la valeur minimum de la durée active. La valeur doit être supérieure ou égale à zéro, qui est la valeur par défaut et ne contraint pas la durée active.</p>
+<p>Pour <code>max</code>, la valeur d’horloge spécifie la longueur de la valeur maximum de la durée active. Elle doit également être supérieure à zéro. La valeur par défaut de <code>max</code> est <code>indefinite</code>, elle ne contraint pas la durée active.</p>
+<p>Si les attributs <code>min</code> et <code>max</code> sont tous les deux spécifiés, la valeur de <code>max</code> doit être supérieure ou égale à la valeur de <code>min</code>, faute de quoi les deux attributs sont ignorés.</p>
+<p>Mais qu’est-ce qui définit la durée active d’un élément&nbsp;? Nous avons déjà mentionné la durée de répétition, en plus de la “simple durée” qui est la durée de l’animation sans répétition (spécifiée avec <code>dur</code>), alors comment toutes ces durées fonctionnent-elles ensemble&nbsp;? Laquelle prend le dessus&nbsp;? Et où intervient l’attribut <code>end</code> qui prendrait le pas sur tous les autres pour mettre fin à l’animation&nbsp;?</p>
+<p>Les choses se passent de la manière suivante&nbsp;: le navigateur va <em>d’abord</em> calculer la durée active en fonction des valeurs <code>dur</code>, <code>repeatCount</code>, <code>repeatDur</code> et <code>end</code>. <em>Puis</em>, il compare cette durée calculée avec les valeurs <code>min</code> et <code>max</code>. Si le résultat est à l’intérieur des limites, cette première durée calculée est correcte et ne sera pas modifiée. Sinon, deux situations sont possibles&nbsp;:</p>
+<ul>
+<li>Si la première durée calculée est supérieure à la valeur <code>max</code>, la durée active de l’élément est définie comme égale à <code>max</code>.</li>
+<li>Si la première durée calculée est inférieure à la valeur <code>min</code>, la durée active de l’élément est définie comme égale à <code>min</code> et l’élément se comporte comme suit&nbsp;:
+<ul>
+<li>Si la durée de répétitions (ou la durée simple, si l’élément ne se répète pas) de l’élément est supérieure à <code>min</code>, alors l’élément est animé normalement pendant la durée active (avec la contrainte <code>min</code>).</li>
+<li>Sinon, l’élément est animé normalement pour sa durée de répétition (ou sa durée simple s’il ne se répète pas) et il est arrêté (gelé) ou il n’est pas montré selon la valeur de l’attribut <code>fill</code>.</li>
+</ul>
+</li>
+</ul>
+<p>Il nous reste maintenant à voir comment le navigateur calcule la durée active. Pour faire bref, je n’entrerai pas dans les détails ici. Mais vous pouvez trouver dans <a href="https://www.w3.org/TR/2001/REC-smil-animation-20010904/#ComputingActiveDur">la spécification</a> un tableau complet détaillant les combinaisons de <code>dur</code>, <code>repeatCount</code>, <code>repeatDur</code> et <code>end</code> et ce que deviendra la durée active en fonction de la combinaison de ces attributs.</p>
+<p>Enfin, si on définit qu’un élément doit commencer avant son parent (par exemple avec une valeur de décalage négative), la durée minimum est mesurée à partir du temps calculé de départ, et non à partir du temps observé. Cela signifie que la valeur <code>min</code> peut n’avoir aucun effet observé.</p>
+<h3 id="unexempledanimatemorphingdeschemins">Un exemple d'<code>animate</code> : morphing des chemins</h3>
+<p>Un des attributs qu’on peut animer en SMIL (mais pas en CSS) est l’attribut <code>d</code> (raccourci pour <em>data</em>) d’un <code>&lt;path&gt;</code> SVG. L’<span itemprop="about" property="dc:subject">attribut <code>d</code></span> contient les données définissant le contour de la forme que nous dessinons. Elles sont constituées par un ensemble de commandes et de coordonnées qui indiquent au navigateur où et comment dessiner des points, des arcs, des lignes qui forment le chemin final.</p>
+<p>L’animation de cet attribut nous permet de <em>morpher</em> les chemins SVG et de créer des effets d’interpolation de formes. Mais pour pouvoir réaliser ce morphing, les chemins de début, de fin et tous les chemins intermédiaires doivent avoir le même nombre de sommets et de points, qui doivent apparaître dans le même ordre. Si le nombre de sommets ne correspond pas, l’animation ne marchera pas. La raison est que les modifications de la forme sont produites par le déplacement des sommets et l’<a href="https://fr.wikipedia.org/wiki/Tweening">interpolation</a> de leur positions.</p>
+<p>Pour animer un chemin SVG, on spécifie que l’<code>attributeName</code> doit être <code>d</code>, et on fixe les valeurs de <code>from</code> et <code>to</code> qui indiquent les formes de début et de fin, et on peut utiliser l'attribut <code>values</code> pour indiquer toute valeur intermédiaire.<span id="morphing"></span></p>
+<p>Là non plus je n’entrerai pas dans les détails. Vous pouvez lire <a href="https://codepen.io/noahblon/blog/an-intro-to-svg-animation-with-smil">cet excellent article de Noah Blon</a> dans lequel il explique comment il a créé une animation utilisant l’interpolation de formes avec <code>&lt;animate&gt;</code>. La démo live de l’article de Noah ressemble à ceci&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_IhLFK" src="./Guide des animations SVG (SMIL)_files/IhLFK.html" scrolling="no" frameborder="0" height="257" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 16" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Et voici un autre exemple de <span itemprop="about" property="dc:subject">morphing</span> par Felix Hornoiu&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_dovub" src="./Guide des animations SVG (SMIL)_files/dovub.html" scrolling="no" frameborder="0" height="338" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 15" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Vous pouvez même morpher les valeurs d’un chemin utilisé comme masque de détourage&nbsp;! En voici un exemple par Heather Buchel&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_qLxAB" src="./Guide des animations SVG (SMIL)_files/qLxAB.html" scrolling="no" frameborder="0" height="271" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 14" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h2 id="animerlelongdecheminsarbitrairesavecanimatemotion">Animer le long de chemins arbitraires avec <code>animateMotion</code></h2>
+<p>L’<span itemprop="about" property="dc:subject">élément <code>&lt;animateMotion&gt;</code></span> est mon élément SMIL préféré. Vous pouvez l’utiliser pour déplacer un élément le long d’un chemin. On peut spécifier le chemin de déplacement de deux façons possibles, que nous allons voir tout à l’heure.</p>
+<p>L’élément <code>&lt;animateMotion&gt;</code> accepte les mêmes attributs que mentionnés précédemment, plus trois autres&nbsp;: <span itemprop="about" property="dc:subject"><code>keyPoints</code></span>, <code>rotate</code> et <code>path</code>. Par ailleurs, concernant l’attribut <code>calcMode</code>, la valeur par défaut est <code>paced</code> et non <code>linear</code>.</p>
+<h3 id="spcifierlecheminaveclattributpath">Spécifier le chemin avec l’attribut <code>path</code></h3>
+<p>L’attribut <code>path</code> est utilisé pour spécifier le chemin de déplacement. Il est exprimé dans le même format et interprété de la même façon que l’attribut <code>d</code> sur l’élément <code>path</code>.</p>
+<p>Nous allons animer notre cercle le long d’un chemin qui ressemble à ceci&nbsp;:</p>
+<figure role="group"><span itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><img itemprop="url" src="./Guide des animations SVG (SMIL)_files/path-compressor.png" width="785" height="403" alt="ligne courbe descendante puis remontante"><meta itemprop="width" content="785"><meta itemprop="height" content="403"></span></figure>
+<p>Voici le code nécessaire pour déplacer le cercle le long de ce chemin&nbsp;:</p>
+<pre><code>//SVG
+&lt;animateMotion 
+  xlink:href="#circle"
+  dur="1s"
+  begin="click"
+  fill="freeze"
+  path="M0,0c3.2-3.4,18.4-0.6,23.4-0.6c5.7,0.1,10.8,0.9,16.3,2.3    			c13.5,3.5,26.1,9.6,38.5,16.2c12.3,6.5,21.3,16.8,31.9,25.4
+	c10.8,8.7,21,18.3,31.7,26.9c9.3,7.4,20.9,11.5,31.4,16.7
+	c13.7,6.8,26.8,9.7,41.8,9c21.4-1,40.8-3.7,61.3-10.4
+    c10.9-3.5,18.9-11.3,28.5-17.8c5.4-3.7,10.4-6.7,14.8-11.5
+	c1.9-2.1,3.7-5.5,6.5-6.5" /&gt;
+</code></pre>
+<p>Je voudrais attirer votre attention sur un point&nbsp;: les coordonnées à l’intérieur de path. Le chemin commence en se mouvant(<strong>M</strong>) vers le point de coordonnées (0,0), avant de commencer à dessiner une courbe (<strong>c</strong>) vers un autre point. Il est important de noter que le point (0,0) est en fait la position du cercle, où qu’il se trouve, et non l’angle supérieur gauche du système de coordonnées. Les coordonnées à l’intérieur de l’attribut <code>path</code> sont relatives à la position <em>actuelle</em> de l’élément&nbsp;!</p>
+<p>Le résultat est le suivant&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_184082960ac3cc65d00b22f2551a330a" src="./Guide des animations SVG (SMIL)_files/184082960ac3cc65d00b22f2551a330a.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 13" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Si vous spécifiiez le chemin en partant d’un point autre que (0,0), le cercle sauterait brusquement de sa position actuelle à la position spécifiée. Imaginez que vous dessiniez un chemin dans Illustrator puis que vous exportiez ces données de chemin pour les utiliser comme chemin de déplacement (c’est ce que j’ai fait la première fois...) le chemin exporté pourrait ressembler à ceci&nbsp;:</p>
+<pre><code>//SVG
+&lt;path fill="none" stroke="#000000" stroke-miterlimit="10" d="M100.4,102.2c3.2-3.4,18.4-0.6,23.4-0.6c5.7,0.1,10.8,0.9,16.3,2.3
+c13.5,3.5,26.1,9.6,38.5,16.2c12.3,6.5,21.3,16.8,31.9,25.4c10.8,8.7,21,18.3,31.7,26.9c9.3,7.4,20.9,11.5,31.4,16.7
+c13.7,6.8,26.8,9.7,41.8,9c21.4-1,40.8-3.7,61.3-10.4c10.9-3.5,18.9-11.3,28.5-17.8c5.4-3.7,10.4-6.7,14.8-11.5
+c1.9-2.1,3.7-5.5,6.5-6.5"/&gt;
+</code></pre>
+<p>Dans ce cas, le point de départ est (100.4, 102.2) et si nous utilisions ces données dans le chemin, notre cercle sauterait de 100 unités vers la droite et de 102 unités vers le bas, <em>puis</em> commencerait à se mouvoir le long du chemin relatif à sa nouvelle position. Donc gardez bien ceci à l’esprit lorsque vous préparerez le chemin de déplacement de vos animations.</p>
+<p>Si on les utilise, les attributs <code>from</code>, <code>by</code>, <code>to</code> et <code>values</code> spécifient une forme sur le canevas en cours qui représente le chemin de déplacement.</p>
+<h3 id="spcifierlecheminavecllmentmpath">Spécifier le chemin avec l’élément <code>mpath</code></h3>
+<p>Il existe une autre façon de spécifier un chemin de déplacement. Au lieu d’utiliser l’attribut relatif <code>path</code>, on peut référencer un chemin externe grâce à l’<span itemprop="about" property="dc:subject">élément <code>&lt;mpath&gt;</code></span>. Le <code>&lt;mpath&gt;</code>, qui est un enfant de l’élément <code>&lt;animateMotion&gt;</code> référence alors le chemin externe avec l’<span itemprop="about" property="dc:subject">attribut <code>xlink:href</code></span>.</p>
+<pre><code>//SVG
+&lt;animateMotion xlink:href="#circle" dur="1s" begin="click" fill="freeze"&gt;
+&lt;mpath xlink:href="#motionPath" /&gt;
+&lt;/animateMotion&gt;
+</code></pre>
+<p><span itemprop="about" property="dc:subject">Le chemin de déplacement <code>&lt;path&gt;</code></span> peut être défini n’importe où dans le document. Il peut même littéralement être défini dans un <span itemprop="about" property="dc:subject">élément <code>&lt;defs&gt;</code></span> et ne pas être rendu sur le canevas. Dans l’exemple suivant, le chemin est rendu parce que la plupart du temps vous voudrez montrer le chemin que suit l’élément.</p>
+<p>Notez que la position du cercle est “multipliée” ou “transformée” par les coordonnées dans les données du chemin.</p>
+<p>Dans l’exemple suivant, nous avons un chemin situé au milieu du canevas. Le cercle est positionné au début du chemin. Cependant, lorsque le chemin de déplacement est appliqué, le cercle ne commence pas à se mouvoir depuis sa position courante. Regardez la démo pour une meilleure explication.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_0642931398bf1cf3ed1ff9b3e6b52398" src="./Guide des animations SVG (SMIL)_files/0642931398bf1cf3ed1ff9b3e6b52398.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 12" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Vous avez remarqué la façon dont le cercle suit la même forme que le chemin mais à partir d’une position différente&nbsp;? Ceci est dû au fait que la position du cercle est transformée par les valeurs des données du chemin.</p>
+<p>Pour éviter cela, on peut commencer avec un cercle positionné à (0,0).</p>
+<p>Une autre façon de faire est d’appliquer <a href="http://sarasoueidan.com/blog/svg-transformations/">une transformation</a> qui “remet à zéro” les coordonnées du cercle.</p>
+<p>L’exemple qui suit est une version modifiée de la démo précédente, utilisant un chemin fermé et répétant l’animation de manière indéfinie.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_ef9f0e1242263cf23067b09be894cfa9" src="./Guide des animations SVG (SMIL)_files/ef9f0e1242263cf23067b09be894cfa9.html" scrolling="no" frameborder="0" height="550" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 11" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h3 id="prvalencederglespouranimatemotion">Prévalence de règles pour <code>animateMotion</code></h3>
+<p>Puisqu’il existe plus d’une façon de faire la même chose avec <code>animateMotion</code>, il est logique d’avoir une prévalence de certaines règles sur d’autres :</p>
+<ul>
+<li>Concernant la définition du chemin de déplacement, l’élément <code>mpath</code> prévaut sur l’attribut <code>path</code>, qui lui même prévaut sur <code>values</code>, qui prévaut sur <code>from</code>, <code>by</code> et <code>to</code>.</li>
+<li>Concernant la détermination des points correspondant aux attributs <code>keyTimes</code>, l’attribut <code>keyPoints</code> prévaut sur <code>path</code> qui lui même prévaut sur <code>values</code>, qui prévaut sur <code>from</code>, <code>by</code> et <code>to</code>.</li>
+</ul>
+<h3 id="fixerlorientationdunlmentlelongduncheminavecrotate">Fixer l’orientation d’un élément le long d’un chemin avec <code>rotate</code></h3>
+<p>Dans l’exemple précédent, l’élément que nous animions le long du chemin était un cercle. Mais que se passe-t-il si nous animons un élément qui a une certaine orientation, par exemple l’icône d’une voiture&nbsp;? Nous nous servirons de l’icône <a href="http://www.freepik.com/free-vector/transport-icons-collection_753635.htm">conçue par Freepik</a>.</p>
+<p>Dans cet exemple, j’ai remplacé le cercle par un groupe ayant un ID de “car”, qui contient l’élément constituant le groupe. Puis, afin d’éviter le problème de saut brusque rencontré précédemment, j’ai appliqué une transformation à la voiture qui la translate de façon telle qu’elle se retrouve en position initiale à (0,0). Les valeurs de la transformation correspondent aux coordonnées du point où le premier chemin de la voiture commence à être dessiné (juste après la commande move <strong>M</strong>).</p>
+<p>La voiture se déplace le long du chemain mais... voici à quoi ça ressemble&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_3a300b8c4c0f9db4ff345f5d44992b74" src="./Guide des animations SVG (SMIL)_files/3a300b8c4c0f9db4ff345f5d44992b74.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 10" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>L'orientation de la voiture est fixe, elle ne change pas pour s’adapter au chemin de déplacement. Pour modifier cela, nous allons utiliser l’attribut <code>rotate</code>.</p>
+<p>L’attribut <code>rotate</code> peut prendre l’une de ces trois valeurs&nbsp;:</p>
+<ul>
+<li><code>auto</code> : indique que l’objet pivote dans le temps en fonction de l’angle de la direction (c’est à dire le vecteur directionnel tangent) du chemin de déplacement.</li>
+<li><code>auto-reverse</code> : indique que l’objet pivote selon l’angle de direction + 180 degrés.</li>
+<li>un nombre : indique que l’élément se voit appliquer une transformation constante, où l’angle de rotation est le nombre de degrés spécifié.</li>
+</ul>
+<p>Pour corriger l’orientation de la voiture, nous allons régler la valeur de rotation sur <code>auto</code>. Nous obtenons le résultat suivant&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_74af0bd0bbc7ca46d4d568ca0d473b40" src="./Guide des animations SVG (SMIL)_files/74af0bd0bbc7ca46d4d568ca0d473b40.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 9" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Si vous préférez que la voiture se retrouve en dehors du chemin plutôt qu’à l’intérieur, <code>auto-reverse</code> vous permet d’y parvenir&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_1027d099f0e9cca94f8f8865d169c49f" src="./Guide des animations SVG (SMIL)_files/1027d099f0e9cca94f8f8865d169c49f.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 8" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>C’est mieux, mais nous avons encore un petit problème&nbsp;: la voiture a l’air d’avancer à l’envers le long du chemin, comme si elle faisait de la marche arrière&nbsp;! Pour corriger cela, nous devons faire pivoter la voiture sur son axe des y. On y parvient avec scale. Donc si nous appliquons la transformation au groupe <code>g</code> ayant l’ID de <code>car</code>, la voiture avancera comme prévu. La transformation <code>scale</code> est enchaînée avec les autres translations&nbsp;:</p>
+<pre><code>//SVG
+&lt;g id="car" transform="scale (-1, 1) translate(-234.4, -182.8)"&gt;
+</code></pre>
+<p>Et voici la démo finale :</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_48caf2f5fa42a8c154fcb5dec0dbe4d5" src="./Guide des animations SVG (SMIL)_files/48caf2f5fa42a8c154fcb5dec0dbe4d5.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 7" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h3 id="contrlerladistancedanimationlelongduchemin">Contrôler la distance d’animation le long du chemin</h3>
+<p>L’attribut <code>keyPoints</code> nous offre la possibilité de spécifier la progression le long du chemin de déplacement pour chacune des valeurs de <code>keyTimes</code>. Si on utilise des <code>keyPoints</code>, <code>keyTimes</code> prendra les valeurs de <code>keyPoints</code> au lieu de celles spécifiées dans une liste de <code>values</code>.</p>
+<p><code>keyPoints</code> accepte une liste de valeurs décimales entre 0 et 1, séparées par des points-virgules, et il indique à quel endroit l’objet doit se déplacer à un moment donné, spécifié par les valeurs <code>keyTimes</code> correspondantes. Les calculs de distances sont déterminés par les algorithmes du navigateur. Chaque valeur de progression dans la liste correspond à une valeur dans la liste de l’attribut <code>keyTimes</code>. Si une liste de <code>keyPoints</code> est spécifiée, il doit y avoir exactement autant de valeurs dans la liste <code>keyPoints</code> que dans la liste <code>keyTimes</code>.</p>
+<p>Une chose importante à noter ici est qu’il faut régler la valeur de <code>calcMode</code> sur <code>linear</code> pour que <code>keyPoints</code> fonctionne.</p>
+<p>L’exemple qui suit est d’Amelia Bellamy-Royds (dont vous devriez absolument visiter le <a href="https://codepen.io/AmeliaBR/">profile CodePen</a>) il utilise <code>keyPoints</code> pour faire comme si on commençait un mouvement depuis un point en retrait, car nous n’avons pas cette possibilité par défaut actuellement dans SMIL.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_ewvrC" src="./Guide des animations SVG (SMIL)_files/ewvrC.html" scrolling="no" frameborder="0" height="450" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 6" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h2 id="dplaceruntextelelongduncheminarbitraire">Déplacer un texte le long d’un chemin arbitraire</h2>
+<p>Le déplacement d’un texte le long d’un chemin est différent du déplacement des autres éléments SVG le long d’un chemin. Pour animer du texte, vous devrez utiliser l’élément <code>&lt;animate&gt;</code> et non pas l’élément <code>&lt;animateMotion&gt;</code>.</p>
+<p>Tout d’abord, positionnons le texte le long d’un chemin. On peut le faire en emboîtant un <span itemprop="about">élément <code>&lt;textPath&gt;</code></span> à l’intérieur de l’<span itemprop="about">élément <code>&lt;text&gt;</code></span>. Le texte qui sera positionné le long d’un chemin sera défini à l’intérieur de l’élément <code>&lt;textPath&gt;</code> et non comme un enfant de l’élément <code>&lt;text&gt;</code>.</p>
+<p>Le <code>textPath</code> va référencer le chemin que nous voulons utiliser, comme nous l’avons fait dans les exemples précédents. Le chemin référencé peut soit être rendu sur le canvas, soit défini à l’intérieur de <code>&lt;defs&gt;</code>. Regardez le code de la démo suivante en cliquant sur html&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_ebfc92e45e24b29c266f50e6f617cdf5" src="./Guide des animations SVG (SMIL)_files/ebfc92e45e24b29c266f50e6f617cdf5.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 5" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Pour animer le texte le long de ce chemin, nous allons utiliser l’élément <code>&lt;animate&gt;</code> pour animer l’<span itemprop="about">attribut <code>startOffset</code></span>.</p>
+<p>Le <code>startOffset</code> représente le décalage éventuel du texte sur le chemin. 0% représente le début du chemin, 100% la fin, donc si l’offset est réglé à 50% le texte commencera à mi-chemin .</p>
+<p>En animant le <code>startOffset</code>, nous allons créer l’effet du texte qui se déplace sur le chemin. Regardez le code pour plus de détails.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_501308e154923359ed1cdbfa29eadcc0" src="./Guide des animations SVG (SMIL)_files/501308e154923359ed1cdbfa29eadcc0.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 4" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h2 id="animerlestransformations">Animer les transformations</h2>
+<p>L’élément <code>&lt;animateTransform&gt;</code> anime un attribut de transformation sur un élément cible, permettant par là-même aux animations de contrôler la translation, le redimensionnement, la rotation et la déformation. Il prend les mêmes attributs que ceux mentionnés pour l’élément <code>&lt;animate&gt;</code>, plus un : <code>type</code>.</p>
+<p>L’<span itemprop="about">attribut <code>type</code></span> est utilisé pour spécifier le type de transformation animé. Il prend l’une de ces cinq valeurs&nbsp;: <code>translate</code>, <code>scale</code>, <code>rotate</code>, <code>skewX</code> et <code>skewY</code>.</p>
+<p>Les attributs <code>from</code>, <code>by</code> et <code>to</code> prennent une valeur exprimée avec la même syntaxe que celle qui est disponible pour le type de transformation concerné&nbsp;:</p>
+<ul>
+<li>Pour un <code>type="translate"</code> chaque valeur individuelle est exprimée comme <code>&lt;tx&gt; [,&lt;ty&gt;]</code>.</li>
+<li>Pour un <code>type="scale"</code> chaque valeur individuelle est exprimée comme <code>&lt;sx&gt; [,&lt;sy&gt;]</code>.</li>
+<li>Pour un <code>type="rotate"</code> chaque valeur individuelle est exprimée comme <code>&lt;rotate-angle&gt; [&lt;cx&gt; &lt;cy&gt;]</code>.</li>
+<li>Pour un <code>type="skewX"</code> et <code>type="skewY"</code> chaque valeur individuelle est exprimée comme <code>&lt;skew-angle&gt;</code>.</li>
+</ul>
+<p>Si vous n’êtes pas habitué à la syntaxe des fonctions de l'attribut <code>transform</code> de SVG, je vous recommande de lire l’article que j’ai écrit à ce sujet : <a href="http://sarasoueidan.com/blog/svg-transformations/">Understanding SVG Coordinate Systems and Transformations (Part 2): The Transform Attribute</a>, avant de continuer avec ce guide.</p>
+<p>Revenons à une démo précédente, celle où nous faisions tourner sur lui-même le rectangle rose en utilisant l’élément <code>&lt;animateTransform&gt;</code>. Le code de la rotation ressemble à ceci&nbsp;:</p>
+<pre><code>//SVG
+&lt;rect id="deepPink-rectangle" width="50" height="50" x="50" y="50" fill="deepPink" /&gt;
+
+&lt;animateTransform 
+    xlink:href="#deepPink-rectangle"
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate"
+    from="0 75 75"
+    to="360 75 75" 
+    dur="2s"
+    begin="0s"
+    repeatCount="indefinite"
+    fill="freeze" 
+    /&gt;
+</code></pre>
+<p>Les attributs <code>from</code> et <code>to</code> spécifient l’angle de rotation (début et fin) et le centre de la rotation (75, 75). Dans les deux, le centre de la rotation reste inchangé bien sûr. Si l’on ne spécifie pas le centre, il sera par défaut le coin supérieur gauche du canevas SVG.</p>
+<p>La démo live du code est la suivante&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_1bb859d4103d5e32b037f69e906319fb" src="./Guide des animations SVG (SMIL)_files/1bb859d4103d5e32b037f69e906319fb.html" scrolling="no" frameborder="0" height="280" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 3" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Et voici un exemple amusant par Gabriel, avec un simple <code>animateTransform</code>&nbsp;:</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_obhzc" src="./Guide des animations SVG (SMIL)_files/obhzc.html" scrolling="no" frameborder="0" height="350" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 2" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<p>Animer une transformation unique est simple, toutefois les choses peuvent devenir compliquées lorsqu’on inclut des transformations multiples, en particulier du fait qu’une <code>animateTransform</code> peut en écraser une autre, ce qui fait qu’au lieu d’ajouter et d’enchaîner des effets, vous terminerez avec l’inverse. Ajoutez à cela la manière dont fonctionnent les systèmes de coordonnées SVG (cf. mon article cité plus haut). Pour transformer les SVG, je vous recommande d’utiliser les transformations CSS.</p>
+<h2 id="llmentset">L’élément <code>set</code></h2>
+<p>L’<span itemprop="about">élément <code>&lt;set&gt;</code></span> offre une manière simple de régler la valeur d’un attribut pour une durée donnée. Il accepte tous les types d’attributs, dont ceux qui ne peuvent pas être raisonnablement interpolés, tels que les chaînes de caractères et les valeurs booléennes. L’élément <code>set</code> n’est pas additif. Les attributs additifs et accumulatifs ne sont pas permis et seront ignorés si on les utilise.</p>
+<p>Puisque <code>&lt;set&gt;</code> est utilisé pour donner une valeur spécifique à un élément, pour une durée déterminée, il n’accepte pas tous les attributs mentionnés pour les éléments d'animation précédents. Par exemple, il n’a pas d’attribut <code>from</code> ou <code>by</code> car les valeurs ne changent pas progressivement sur la période de temps.</p>
+<p>Pour <code>set</code>, vous pouvez spécifier l’élément que vous ciblez, le nom et le type d’attribut, la valeur <code>to</code>, et le timing d’animation peut être contrôlé via <code>begin</code>, <code>dur</code>, <code>end</code>, <code>min</code>, <code>max</code>, <code>restart</code>, <code>repeatCount</code>, <code>repeatDur</code> et <code>fill</code>.</p>
+<p>Dans l’exemple qui suit, on fixe (<code>set</code>) la couleur du rectangle tournant au bleu lorsqu’on le clique. La couleur reste bleue pendant 3 secondes, puis revient à sa valeur d’origine. À chaque fois qu’on clique sur le rectangle, l’animation <code>set</code> est déclenchée et la couleur change pour 3 secondes.</p>
+<div><div class="cp_embed_wrapper"><iframe id="cp_embed_af159baaf57bc38eb40288db722e1245" src="./Guide des animations SVG (SMIL)_files/af159baaf57bc38eb40288db722e1245.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 1" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><script async="" data-rocketsrc="//codepen.io/assets/embed/ei.js" type="text/rocketscript" data-rocketoptimized="true"></script></div>
+<h3 id="lmentsattributsetpropritspeuventtreanims">Éléments, attributs et propriétés peuvent être animés</h3>
+<p>Tous les attributs SVG ne peuvent pas être animés, et parmi ceux qui peuvent l’être, tous ne peuvent utiliser l’intégralité des éléments d’animation. Pour une liste complète des attributs animables, et un tableau montrant lesquels peuvent être animés par quels éléments, vous pouvez vous référer à <span itemprop="about" property="dc:subject"><a href="https://www.w3.org/TR/SVG2/animate.html#AnimationAttributesAndProperties">cette section de la spécification SVG Animation</a></span>.</p>
+<h3 id="pourconclure">Pour conclure</h3>
+<p>SMIL a un potentiel énorme, je n’ai fait qu’effleurer la surface et je n’ai abordé que les bases les plus simples. De nombreux effets très impressionnants peuvent être réalisés, en particulier ceux qui impliquent le morphing et la transformation des formes. <em>The sky is the limit</em>. Soyez fous&nbsp;! et n’oubliez pas de partager ce que vous créez avec la communauté&nbsp;! Merci de votre lecture.</p>
+<hr>
+<p><span class="interesse"><strong>Intéressé par SVG ?</strong> Retrouvez une liste des meilleurs <strong><a href="https://la-cascade.io/articles/#svg">articles</a></strong> et <strong><a href="https://la-cascade.io/ressources/#svg">ressources</a></strong> du web</span>.</p>
+<p><span class="toutlire"><span aria-hidden="true" data-icon="☞"> </span><strong><a href="https://la-cascade.io/tag/svg/">Tous les articles sur SVG</a></strong> parus dans la Cascade</span>.</p>
+<hr>
+<p><span class="ressourcesComplementaires"><strong>Ressources complémentaires</strong></span></p>
+<p>Un bel exemple d’utilisation de SMIL, dans le jeu en ligne <a href="http://play.esviji.com/">esviji</a> de <a href="https://twitter.com/nhoizey">Nicolas Hoizey</a>.</p>
+<div class="adsense-page"><p style="position:relative;top:20px;margin:0;"><em>(publicité)</em></p><script async="" data-rocketsrc="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/rocketscript" data-rocketoptimized="true"></script><script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6231901620347557" data-ad-slot="6601693420"></ins><script type="text/rocketscript" data-rocketoptimized="true">
+(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<hr>
+<div itemprop="translationOfWork" itemscope="" itemtype="http://schema.org/CreativeWork"><strong><span class="toutlire"><a itemprop="url" href="https://css-tricks.com/guide-svg-animations-smil/">Article</a> original paru le <meta itemprop="datePublished" content="2014-10-13">13 octobre 2014 dans <a itemprop="sourceOrganization" href="https://css-tricks.com/">CSS-Tricks</a></span></strong><br>
+<em>Traduit avec l’aimable autorisation de CSS-Tricks et de l’auteur.<br>
+Copyright <span itemprop="copyrightHolder" content="https://css-tricks.com/">CSS-Tricks</span> © <span itemprop="copyrightYear">2014</span></em>.
+<p><span class="interesse"><strong>Sur l’auteur</strong></span> : <span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name"><a itemprop="url" href="https://plus.google.com/+SaraSoueidan/about" class="authorLink">Sara Soueidan</a></span></span> est une intégratrice web libanaise. Elle aime enseigner et écrit des tutoriels sur son <a href="http://sarasoueidan.com/">blog</a> et sur <a href="http://tympanus.net/codrops/">Codrops</a>, dont elle est un des membres actifs. Vous pouvez la suivre sur <a href="https://twitter.com/SaraSoueidan">Twitter</a> et sur <a href="https://github.com/SaraSoueidan">Github</a>.</p></div></div>
+</section>
+<footer class="post-footer">
+<figure class="author-image" role="group">
+<a class="img" href="https://la-cascade.io/author/pierre-choffe/" style="background-image: url(//www.gravatar.com/avatar/22b6733860196ff885f31beedf1581ef?s=250&amp;d=mm&amp;r=x)"><span class="hidden">pierre choffé's Picture</span></a>
+</figure>
+<div class="author">
+<h4 itemprop="translator" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name"><a itemprop="url" href="https://la-cascade.io/author/pierre-choffe/">pierre choffé</a></span></h4>
+<p>Manager d’ensembles musicaux, Traducteur, en route vers la Planète SemanticWeb à bord du vaisseau FRBRoo, pour la description, le partage et l'enrichissement des données musicales.</p>
+<div class="author-meta">
+<span class="author-location icon-location" itemprop="locationCreated" itemscope="" itemtype="http://schema.org/Place"><span itemprop="name">Paris, France</span></span>
+</div>
+</div>
+<section class="share">
+<h4>Share this post</h4>
+<a class="icon-twitter" href="https://twitter.com/share?text=Guide%20des%20animations%20SVG%20(SMIL)&amp;url=https://la-cascade.io/guide-des-animations-svg/" onclick="window.open(this.href, &#39;twitter-share&#39;, &#39;width=550,height=235&#39;);return false;">
+<span class="hidden">Twitter</span>
+</a>
+<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://la-cascade.io/guide-des-animations-svg/" onclick="window.open(this.href, &#39;facebook-share&#39;,&#39;width=580,height=296&#39;);return false;">
+<span class="hidden">Facebook</span>
+</a>
+<a class="icon-google-plus" href="https://plus.google.com/share?url=https://la-cascade.io/guide-des-animations-svg/" onclick="window.open(this.href, &#39;google-plus-share&#39;, &#39;width=490,height=530&#39;);return false;">
+<span class="hidden">Google+</span>
+</a>
+</section>
+</footer>
+</article>
+</main>
+<aside class="read-next">
+<a class="read-next-story no-cover" href="https://la-cascade.io/masquer-et-detourer-en-css/">
+<section class="post">
+<h2>Masquer et détourer en CSS</h2>
+<p>Il est devenu compliqué de s'y retrouver dans le paysage changeant du clipping et du masking. Évolution des syntaxes,…</p>
+</section>
+</a>
+<a class="read-next-story prev no-cover" href="https://la-cascade.io/css-animation-une-introduction/">
+<section class="post">
+<h2>CSS animation, une introduction</h2>
+<p>Une présentation claire et vivante des animations CSS par Rachel Cope, avec exemples de code et présentation live sur…</p>
+</section>
+</a>
+</aside>
+<footer class="site-footer clearfix">
+<div class="copyright"><span itemprop="copyrightHolder" itemscope="" itemtype="https://schema.org/Organization"><span itemprop="name"><a itemprop="url" href="https://la-cascade.io/">LA CASCADE</a></span></span> Traductions <span itemprop="license" itemscope="" itemtype="https://schema.org/CreativeWork"><a itemprop="url" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><span itemprop="name">CC BY-NC-SA 4.0</span></a></span></div>
+<div class="poweredby">Proudly published with <a href="https://ghost.org/">Ghost</a></div>
+</footer>
+</div>
+
+<script type="text/rocketscript" data-rocketsrc="https://code.jquery.com/jquery-1.11.3.min.js" data-rocketoptimized="true"></script><script type="text/javascript" src="./Guide des animations SVG (SMIL)_files/jquery-1.11.3.min.js"></script>
+<script type="text/rocketscript" data-rocketoptimized="true">(function(d){d.fn.fitVids=function(e){var c={customSelector:null};if(!document.getElementById("fit-vids-style")){var g=document.head||document.getElementsByTagName("head")[0],f=document.createElement("div");f.innerHTML='<p>x</p><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>';g.appendChild(f.childNodes[1])}e&&
+d.extend(c,e);return this.each(function(){var b="iframe[src*='player.vimeo.com'] iframe[src*='youtube.com'] iframe[src*='youtube-nocookie.com'] iframe[src*='kickstarter.com'][src*='video.html'] object embed".split(" ");c.customSelector&&b.push(c.customSelector);b=d(this).find(b.join(","));b=b.not("object object");b.each(function(){var a=d(this);if(!("embed"===this.tagName.toLowerCase()&&a.parent("object").length||a.parent(".fluid-width-video-wrapper").length)){var b="object"===this.tagName.toLowerCase()||
+a.attr("height")&&!isNaN(parseInt(a.attr("height"),10))?parseInt(a.attr("height"),10):a.height(),c=isNaN(parseInt(a.attr("width"),10))?a.width():parseInt(a.attr("width"),10),b=b/c;a.attr("id")||(c="fitvid"+Math.floor(999999*Math.random()),a.attr("id",c));a.wrap('<div class="fluid-width-video-wrapper"></div>').parent(".fluid-width-video-wrapper").css("padding-top",100*b+"%");a.removeAttr("height").removeAttr("width")}})})}})(window.jQuery||window.Zepto);</script>
+<script type="text/rocketscript" data-rocketoptimized="true">(function(a,h){a(document).ready(function(){a(".post-content").fitVids();a(".scroll-down").arctic_scroll();a(".menu-button, .nav-cover, .nav-close").on("click",function(f){f.preventDefault();a("body").toggleClass("nav-opened nav-closed")})});a.fn.arctic_scroll=function(f){var g={elem:a(this),speed:500},e=a.extend(g,f);e.elem.click(function(d){d.preventDefault();var b=a(this);d=a("html, body");var c=b.attr("data-offset")?b.attr("data-offset"):!1,b=b.attr("data-position")?b.attr("data-position"):!1;
+c?(c=parseInt(c),d.stop(!0,!1).animate({scrollTop:a(this.hash).offset().top+c},e.speed)):b?(c=parseInt(b),d.stop(!0,!1).animate({scrollTop:c},e.speed)):d.stop(!0,!1).animate({scrollTop:a(this.hash).offset().top},e.speed)})}})(jQuery);</script>
+
+
+<cloudflare-app app-id="back-to-top-button" visibility="visible" shape="rounded" style="background-color: rgba(193, 161, 99, 0.2);"><svg class="cloudflare-icon" viewBox="0 0 256 256" version="1.1" style="fill: rgba(192, 161, 98, 0.9);"><path d="M83.5244052,130.453237 L129.059785,84.9178576 L174.595164,130.453237 L144.213452,130.453237 L144.213452,186.792818 L113.896389,186.792818 L113.896389,130.453237 L83.5244052,130.453237 Z M64.431707,68.715835 L64.431707,75.0983746 L193.678134,75.0983746 L193.678134,68.715835 L64.431707,68.715835 Z"></path></svg></cloudflare-app></body></html>

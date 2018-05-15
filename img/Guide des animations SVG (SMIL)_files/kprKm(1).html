@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://s.codepen.io/mileselam/fullembedgrid/kprKm?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - Hexagon Ripple</title>
+  
+  
+  
+  
+  
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+
+  <svg version="1.1" width="320" height="320" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="r1" d="m 141.75 44.3333 l 18.25 -10.3417 l 18.25 10.3417">
+      <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin"></animate>
+    </path>
+    <path id="r2" d="m 130 65.4167 l 30 -17 l 30 17">
+      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"></animate>
+    </path>
+    <path id="r3" d="m 130 90.4167 l 30 -17 l 30 17">
+      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"></animate>
+    </path>
+    <path id="r4" d="m 133.25 115.417 l 26.75 -15.1583 l 26.75 15.1583">
+      <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"></animate>
+    </path>
+    <path id="r5" d="m 148.25 140.417 l 11.75 -6.65833 l 11.75 6.65833">
+      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"></animate>
+    </path>
+    <path id="r6" d="m 156.75 24.3333 l 3.25 -1.84167 l 3.25 1.84167">
+      <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"></animate>
+      <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"></animate>
+    </path>
+  </defs>
+  <use xlink:href="#r1"></use>
+  <use xlink:href="#r1" transform="rotate(60 160 160)"></use>
+  <use xlink:href="#r1" transform="rotate(120 160 160)"></use>
+  <use xlink:href="#r1" transform="rotate(180 160 160)"></use>
+  <use xlink:href="#r1" transform="rotate(240 160 160)"></use>
+  <use xlink:href="#r1" transform="rotate(300 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(30 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(90 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(150 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(210 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(270 160 160)"></use>
+  <use xlink:href="#r2" transform="rotate(330 160 160)"></use>
+  <use xlink:href="#r3"></use>
+  <use xlink:href="#r3" transform="rotate(60 160 160)"></use>
+  <use xlink:href="#r3" transform="rotate(120 160 160)"></use>
+  <use xlink:href="#r3" transform="rotate(180 160 160)"></use>
+  <use xlink:href="#r3" transform="rotate(240 160 160)"></use>
+  <use xlink:href="#r3" transform="rotate(300 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(30 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(90 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(150 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(210 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(270 160 160)"></use>
+  <use xlink:href="#r4" transform="rotate(330 160 160)"></use>
+  <use xlink:href="#r5"></use>
+  <use xlink:href="#r5" transform="rotate(60 160 160)"></use>
+  <use xlink:href="#r5" transform="rotate(120 160 160)"></use>
+  <use xlink:href="#r5" transform="rotate(180 160 160)"></use>
+  <use xlink:href="#r5" transform="rotate(240 160 160)"></use>
+  <use xlink:href="#r5" transform="rotate(300 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(30 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(90 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(150 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(210 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(270 160 160)"></use>
+  <use xlink:href="#r6" transform="rotate(330 160 160)"></use>
+</svg>
+  
+  
+  
+  
+  
+
+
+
+
+ </body></html>
